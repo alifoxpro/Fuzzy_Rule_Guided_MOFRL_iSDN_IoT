@@ -375,7 +375,7 @@
   ok  DIAD2024 A-FedProx vs B-B4 p                         computed 0.000170000000   paper 0.000170000000
   ok  DIAD2024 A-FedProx vs B-B4 Cohen d                   computed -0.81   paper -0.81
 
-== rls_test / rls_balanced / rls_l9_mitigation: Record-level TEST split (results_StrategyB_rls) -- FAIL (5 cell(s))
+== rls_test / rls_balanced / rls_l9_mitigation: Record-level TEST split (results_StrategyB_rls) -- FAIL (8 cell(s))
   ok  DIAD2024 B2_FedAvg MSR [evaluation_on_test.json]     computed 0.7928   paper 0.7928
   ok  DIAD2024 B2_FedAvg JFI [evaluation_on_test.json]     computed 0.9445   paper 0.9445
   ok  DIAD2024 B2_FedAvg FPR [evaluation_on_test.json]     computed 0.066   paper 0.066
@@ -394,8 +394,18 @@
   ok  DIAD2024 B4_Fuzzy FNR [evaluation_on_test.json]      computed 0.000   paper 0.000
   ok  DIAD2024 B4_Fuzzy specificity                        computed 0.954   paper 0.954
   ok  DIAD2024 B4_Fuzzy balanced acc.                      computed 0.977   paper 0.977
-  --  CICIoT2023 B2_FedAvg MSR/JFI/FPR/FNR                 no result file (overwritten by the B4-only L9 re-run on 2026-08-29)   paper 0.8642/0.9731/0.8/0.0
-  --  CICIoT2023 B3_FedProx MSR/JFI/FPR/FNR                no result file (overwritten by the B4-only L9 re-run on 2026-08-29)   paper 0.6292/0.7906/0.451/0.0
+  XX  CICIoT2023 B2_FedAvg MSR [evaluation_on_test_reevaluated.json] computed 0.8643   paper 0.8642
+  ok  CICIoT2023 B2_FedAvg JFI [evaluation_on_test_reevaluated.json] computed 0.9731   paper 0.9731
+  ok  CICIoT2023 B2_FedAvg FPR [evaluation_on_test_reevaluated.json] computed 0.800   paper 0.800
+  ok  CICIoT2023 B2_FedAvg FNR [evaluation_on_test_reevaluated.json] computed 0.000   paper 0.000
+  ok  CICIoT2023 B2_FedAvg specificity                     computed 0.200   paper 0.200
+  ok  CICIoT2023 B2_FedAvg balanced acc.                   computed 0.600   paper 0.600
+  XX  CICIoT2023 B3_FedProx MSR [evaluation_on_test_reevaluated.json] computed 0.6286   paper 0.6292
+  XX  CICIoT2023 B3_FedProx JFI [evaluation_on_test_reevaluated.json] computed 0.7908   paper 0.7906
+  XX  CICIoT2023 B3_FedProx FPR [evaluation_on_test_reevaluated.json] computed 0.449   paper 0.451
+  ok  CICIoT2023 B3_FedProx FNR [evaluation_on_test_reevaluated.json] computed 0.000   paper 0.000
+  XX  CICIoT2023 B3_FedProx specificity                    computed 0.551   paper 0.549
+  ok  CICIoT2023 B3_FedProx balanced acc.                  computed 0.775   paper 0.775
   --  CICIoT2023 B4 original MSR/JFI/FPR                   no result file (the B4 model and its evaluation were replaced by the L9-mitigated re-run)   paper 0.6959/0.9073/0.737
   ok  CICIoT2023 B4 L9-mitigated MSR                       computed 0.6786   paper 0.6786
   XX  CICIoT2023 B4 L9-mitigated FPR                       computed 0.280   paper 0.279
@@ -461,4 +471,4 @@
   ok  (f) MOSAR + PBRS DIAD2024 B4 MSR                     computed 0.9956   paper 0.9956
   ok  (f) MOSAR + PBRS DIAD2024 B4 FPR                     computed 0.0000   paper 0.0000
 
-37 cell(s) differ (12 table group(s) checked)
+40 cell(s) differ (12 table group(s) checked)

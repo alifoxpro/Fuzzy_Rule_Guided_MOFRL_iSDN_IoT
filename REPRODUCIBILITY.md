@@ -18,7 +18,7 @@ The script rebuilds each table from `experiments/` and compares every cell with
 the value printed in the manuscript, at the manuscript's precision. Its output for
 this release is saved in
 [`scripts/reproduce/verification_report.txt`](scripts/reproduce/verification_report.txt):
-**401 cells reproduce exactly; 37 cells differ or have no result file** (listed in
+**408 cells reproduce exactly; 40 cells differ or have no result file** (listed in
 Section 3).
 
 ## 2. Where each table comes from
@@ -34,7 +34,7 @@ Section 3).
 | Fuzzy-TOPSIS (`tab:topsis_cc`) | `results/fuzzy_topsis/` (inputs: `results/{dataset}/results.json`) | `scripts/analysis/fuzzy_topsis_selection.py` |
 | Rule statistics, stability, DQN agreement (`tab:rule_stats`, `tab:rule_stability`, `tab:rule_dqn_agreement`) | `results_StrategyB/{dataset}/afras_fl/*/phase5_rules.json`, `…/fuzzy_retrain/results.json` | `scripts/compute_rule_metrics_all.py` |
 | Strategy A vs B (`tab:strategy_ab`) | `results_StrategyA/{dataset}/results.json`, `results_StrategyB/{dataset}/results.json` | `scripts/training/train_rl_multiagent_StrategyA.py` |
-| Record-level test split (`tab:rls_test`, `tab:rls_balanced`, `tab:rls_l9_mitigation`) | `results_StrategyB_rls/{dataset}/evaluation_on_test.json` | `scripts/training/evaluate_on_test_legacy.py` (50-episode evaluator used for these tables) |
+| Record-level test split (`tab:rls_test`, `tab:rls_balanced`, `tab:rls_l9_mitigation`) | `results_StrategyB_rls/{dataset}/evaluation_on_test.json`; CICIoT2023 B2/B3 from `evaluation_on_test_reevaluated.json` | `scripts/training/evaluate_on_test_legacy.py` (50-episode evaluator used for these tables) |
 | Five-seed replication (`tab:multiseed`) | `results_StrategyB` (42), `_s123`, `_s2026` (CICIoT2023) / `_seed_2026` (DIAD2024), `_seed_7`, `_seed_314` | training script with `--seed` |
 | Ablation cells (`tab:ablation_6cell`) | `results_StrategyB_cell_a_scalar`, `_cell_b_mosar_only`, `_cell_d_mosar_afras`, `results_StrategyB`, `_pbrs` | `scripts/ablations/run_major_revision_queue.py`, `run_tier3_queue.py` |
 
@@ -58,9 +58,17 @@ From `verification_report.txt`:
   0.554 in `results_StrategyB`).
 - **λ ablation, λ = 0.00 row** — `results_StrategyB_lam0.00` contains only a
   mid-training checkpoint; no result file exists for this row.
-- **Record-level test, CICIoT2023 B2, B3 and the original (pre-mitigation) B4** —
-  `results_StrategyB_rls/ciciot2023/evaluation_on_test.json` was overwritten by the
-  B4-only L9-mitigation re-run and holds only that B4 result.
+- **Record-level test, CICIoT2023** — `results_StrategyB_rls/ciciot2023/evaluation_on_test.json`
+  was overwritten by the B4-only L9-mitigation re-run and holds only that B4 result.
+  The saved B2 and B3 models were re-evaluated on 2026-10-25 with the same evaluator
+  (`evaluate_on_test_legacy.py --dataset ciciot2023 --phases B2,B3`, 50 episodes);
+  the output is `evaluation_on_test_reevaluated.json`: B2 MSR 0.8643 / JFI 0.9731 /
+  FPR 0.800 and B3 MSR 0.6286 / JFI 0.7908 / FPR 0.449 (manuscript: 0.8642 / 0.9731 /
+  0.800 and 0.6292 / 0.7906 / 0.451). The evaluator samples its 50 episodes at random,
+  so repeated evaluations of the same model differ slightly: re-evaluating the intact
+  DIAD2024 models reproduced every MSR to four decimals, JFI within 0.0004, and FPR
+  within 0.016. The original (pre-mitigation) CICIoT2023 B4 model was replaced by the
+  mitigated one, so that row cannot be re-evaluated.
 - **Rounding (≤ 0.001):** six 95 %-CI bounds of the five-seed table, three cells of
   the rule tables, and the mitigated CICIoT2023 FPR (0.2797).
 

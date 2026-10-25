@@ -345,12 +345,13 @@ def _rls_phases(ds):
 def t_rls():
     T = Table("rls_test / rls_balanced / rls_l9_mitigation", "Record-level TEST split (results_StrategyB_rls)")
     paper = {
-        "diad2024": {"B2_FedAvg": (0.7928, 0.9445, 0.066, 0.000), "B3_FedProx": (0.9103, 0.9915, 0.066, 0.000), "B4_Fuzzy": (0.9038, 0.9837, 0.046, 0.000)},
-        "ciciot2023": {"B2_FedAvg": (0.8642, 0.9731, 0.800, 0.000), "B3_FedProx": (0.6292, 0.7906, 0.451, 0.000)},
-    }
+        "diad2024": {"B2_FedAvg": (0.7928, 0.9445, 0.066, 0.000, 0.934, 0.967), "B3_FedProx": (0.9103, 0.9915, 0.066, 0.000, 0.934, 0.967),
+                     "B4_Fuzzy": (0.9038, 0.9837, 0.046, 0.000, 0.954, 0.977)},
+        "ciciot2023": {"B2_FedAvg": (0.8642, 0.9731, 0.800, 0.000, 0.200, 0.600), "B3_FedProx": (0.6292, 0.7906, 0.451, 0.000, 0.549, 0.775)},
+    }  # MSR, JFI, FPR, FNR (tab:rls_test); specificity, balanced acc. (tab:rls_balanced)
     for ds, rows in paper.items():
         ph, src = _rls_phases(ds)
-        for name, (msr, jfi, fpr, fnr) in rows.items():
+        for name, (msr, jfi, fpr, fnr, spec, bacc) in rows.items():
             lab = f"{DS[ds]} {name}"
             if name not in ph:
                 T.missing(lab + " MSR/JFI/FPR/FNR", f"{msr}/{jfi}/{fpr}/{fnr}", "overwritten by the B4-only L9 re-run on 2026-08-29")
@@ -360,8 +361,8 @@ def t_rls():
             T.check(f"{lab} JFI [{src[name]}]", p["jfi"], jfi, 4)
             T.check(f"{lab} FPR [{src[name]}]", p["fpr_mean_of_links"], fpr, 3)
             T.check(f"{lab} FNR [{src[name]}]", p["fnr_mean_of_links"], fnr, 3)
-            T.check(f"{lab} specificity", 1 - p["fpr_mean_of_links"], 1 - fpr, 3)
-            T.check(f"{lab} balanced acc.", 1 - (p["fpr_mean_of_links"] + p["fnr_mean_of_links"]) / 2, 1 - (fpr + fnr) / 2, 3)
+            T.check(f"{lab} specificity", 1 - p["fpr_mean_of_links"], spec, 3)
+            T.check(f"{lab} balanced acc.", 1 - (p["fpr_mean_of_links"] + p["fnr_mean_of_links"]) / 2, bacc, 3)
     # CICIoT2023 B4: the paper reports the original (pre-mitigation) run and the L9-mitigated run.
     T.missing("CICIoT2023 B4 original MSR/JFI/FPR", "0.6959/0.9073/0.737",
               "the B4 model and its evaluation were replaced by the L9-mitigated re-run")
