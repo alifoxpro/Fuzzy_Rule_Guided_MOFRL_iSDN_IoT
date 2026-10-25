@@ -1,0 +1,216 @@
+{
+  "link_name": "Link_3_Aggregation_R",
+  "feature_names": [
+    "flow_iat_mean",
+    "fwd_header_length"
+  ],
+  "n_rules": 8,
+  "membership_params": {
+    "flow_iat_mean": {
+      "Low": {
+        "center": -3.662487982203613,
+        "width": 2.6266574884619143
+      },
+      "Medium": {
+        "center": 0.01483250164306682,
+        "width": 2.6266574884619143
+      },
+      "High": {
+        "center": 3.692152985489747,
+        "width": 2.6266574884619143
+      },
+      "range": [
+        -5.238482475280762,
+        5.2681474685668945
+      ]
+    },
+    "fwd_header_length": {
+      "Low": {
+        "center": 1.0325184598663941,
+        "width": 2.785852077123108
+      },
+      "Medium": {
+        "center": 4.9327113678387455,
+        "width": 2.785852077123108
+      },
+      "High": {
+        "center": 8.832904275811096,
+        "width": 2.785852077123108
+      },
+      "range": [
+        -0.6389927864074707,
+        10.504415512084961
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Medium"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.8987341772151899,
+      "support": 34405,
+      "cell_id": 10,
+      "priority": 11.74213043999766,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.937467700258398,
+      "support": 58940,
+      "cell_id": 107,
+      "priority": 8.23793533507533,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "fwd_header_length",
+          "Medium"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.8562732499154548,
+      "support": 3040,
+      "cell_id": 109,
+      "priority": 5.4938092264319485,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "fwd_header_length",
+          "High"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.9888888888888889,
+      "support": 413,
+      "cell_id": 110,
+      "priority": 4.767129525959582,
+      "rank": 4
+    },
+    {
+      "rule_id": 4,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.594855305466238,
+      "support": 1166,
+      "cell_id": 0,
+      "priority": 4.200982160684929,
+      "rank": 5
+    },
+    {
+      "rule_id": 5,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Medium"
+        ],
+        [
+          "fwd_header_length",
+          "High"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.7458100558659218,
+      "support": 358,
+      "cell_id": 105,
+      "priority": 3.5102727993885368,
+      "rank": 6
+    },
+    {
+      "rule_id": 6,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "fwd_header_length",
+          "High"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5416666666666666,
+      "support": 72,
+      "cell_id": 8,
+      "priority": 2.3239988639553784,
+      "rank": 7
+    },
+    {
+      "rule_id": 7,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "fwd_header_length",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5223880597014925,
+      "support": 67,
+      "cell_id": 2,
+      "priority": 2.204220443002444,
+      "rank": 8
+    }
+  ],
+  "summary": {
+    "total_rules": 8,
+    "block_rules": 1,
+    "limit_rules": 3,
+    "allow_rules": 4,
+    "avg_confidence": 0.7607605129972813,
+    "avg_support": 12307.625
+  }
+}

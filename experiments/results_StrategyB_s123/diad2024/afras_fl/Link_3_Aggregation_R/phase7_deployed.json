@@ -1,0 +1,216 @@
+{
+  "link_name": "Link_3_Aggregation_R",
+  "feature_names": [
+    "flow_duration",
+    "flow_iat_mean"
+  ],
+  "n_rules": 8,
+  "membership_params": {
+    "flow_duration": {
+      "Low": {
+        "center": -0.9698728904029237,
+        "width": 0.6504550601210022
+      },
+      "Medium": {
+        "center": -0.05923580623352054,
+        "width": 0.6504550601210022
+      },
+      "High": {
+        "center": 0.8514012779358824,
+        "width": 0.6504550601210022
+      },
+      "range": [
+        -1.360145926475525,
+        1.2416743040084839
+      ]
+    },
+    "flow_iat_mean": {
+      "Low": {
+        "center": 0.8052659854391708,
+        "width": 2.3215101535286333
+      },
+      "Medium": {
+        "center": 4.055380200379258,
+        "width": 2.3215101535286333
+      },
+      "High": {
+        "center": 7.305494415319344,
+        "width": 2.3215101535286333
+      },
+      "range": [
+        -0.587640106678009,
+        8.698400497436523
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Low"
+        ],
+        [
+          "flow_iat_mean",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 145384,
+      "cell_id": 2,
+      "priority": 16.54666249535842,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Medium"
+        ],
+        [
+          "flow_iat_mean",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 24810,
+      "cell_id": 67,
+      "priority": 15.178563573302494,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_duration",
+          "High"
+        ],
+        [
+          "flow_iat_mean",
+          "High"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 9067,
+      "cell_id": 72,
+      "priority": 13.668760517441129,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Medium"
+        ],
+        [
+          "flow_iat_mean",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 21825,
+      "cell_id": 66,
+      "priority": 11.624630109411656,
+      "rank": 4
+    },
+    {
+      "rule_id": 4,
+      "antecedents": [
+        [
+          "flow_duration",
+          "High"
+        ],
+        [
+          "flow_iat_mean",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 1548,
+      "cell_id": 71,
+      "priority": 11.018047260625302,
+      "rank": 5
+    },
+    {
+      "rule_id": 5,
+      "antecedents": [
+        [
+          "flow_duration",
+          "High"
+        ],
+        [
+          "flow_iat_mean",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.9998580697485807,
+      "support": 61137,
+      "cell_id": 69,
+      "priority": 11.016097722526908,
+      "rank": 6
+    },
+    {
+      "rule_id": 6,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Medium"
+        ],
+        [
+          "flow_iat_mean",
+          "High"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 410,
+      "cell_id": 68,
+      "priority": 9.02788982174435,
+      "rank": 7
+    },
+    {
+      "rule_id": 7,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Low"
+        ],
+        [
+          "flow_iat_mean",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 117,
+      "cell_id": 64,
+      "priority": 7.156026936698497,
+      "rank": 8
+    }
+  ],
+  "summary": {
+    "total_rules": 8,
+    "block_rules": 7,
+    "limit_rules": 1,
+    "allow_rules": 0,
+    "avg_confidence": 0.9999822587185726,
+    "avg_support": 33037.25
+  }
+}

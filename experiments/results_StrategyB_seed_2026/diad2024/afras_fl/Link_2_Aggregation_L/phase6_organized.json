@@ -1,0 +1,282 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.76,
+    "support": 9649,
+    "cell_id": 3,
+    "priority": 10.459173041539657,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7439024390243902,
+    "support": 7781,
+    "cell_id": 71,
+    "priority": 9.997567460967337,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "rst_flag_count",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6781609195402298,
+    "support": 8026,
+    "cell_id": 109,
+    "priority": 9.145575899133846,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7478991596638656,
+    "support": 2186,
+    "cell_id": 2,
+    "priority": 8.62733767865839,
+    "rank": 4
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.9957076697164803,
+    "support": 47885,
+    "cell_id": 28,
+    "priority": 8.584257464804457,
+    "rank": 5
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6192733017377567,
+    "support": 1899,
+    "cell_id": 6,
+    "priority": 7.012907091802314,
+    "rank": 6
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "High"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.7142857142857143,
+    "support": 7464,
+    "cell_id": 116,
+    "priority": 6.369986221409493,
+    "rank": 7
+  },
+  {
+    "rule_id": 7,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.9252252252252252,
+    "support": 3083,
+    "cell_id": 67,
+    "priority": 5.946594788122283,
+    "rank": 8
+  },
+  {
+    "rule_id": 8,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5399449035812672,
+    "support": 40696,
+    "cell_id": 83,
+    "priority": 5.7309264272547935,
+    "rank": 9
+  },
+  {
+    "rule_id": 9,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "High"
+      ],
+      [
+        "rst_flag_count",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.696551724137931,
+    "support": 3146,
+    "cell_id": 114,
+    "priority": 5.61017030761038,
+    "rank": 10
+  },
+  {
+    "rule_id": 10,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "rst_flag_count",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5647279549718575,
+    "support": 14855,
+    "cell_id": 112,
+    "priority": 5.42486658538986,
+    "rank": 11
+  },
+  {
+    "rule_id": 11,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "High"
+      ],
+      [
+        "rst_flag_count",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6198960653303638,
+    "support": 1347,
+    "cell_id": 117,
+    "priority": 4.467204928269734,
+    "rank": 12
+  },
+  {
+    "rule_id": 12,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5111441307578009,
+    "support": 673,
+    "cell_id": 108,
+    "priority": 3.3291993434678058,
+    "rank": 13
+  },
+  {
+    "rule_id": 13,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "rst_flag_count",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5544554455445545,
+    "support": 101,
+    "cell_id": 44,
+    "priority": 2.564341361820982,
+    "rank": 14
+  }
+]

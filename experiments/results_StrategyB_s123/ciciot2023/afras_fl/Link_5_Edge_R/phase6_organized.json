@@ -1,0 +1,122 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7536231884057971,
+    "support": 45900,
+    "cell_id": 26,
+    "priority": 9.2698910768468,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Low"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.828125,
+    "support": 284,
+    "cell_id": 0,
+    "priority": 7.0214514036149644,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "High"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5527426160337553,
+    "support": 1082,
+    "cell_id": 104,
+    "priority": 5.11009012233252,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Low"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5955056179775281,
+    "support": 89,
+    "cell_id": 5,
+    "priority": 4.019492907766923,
+    "rank": 4
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.6689342403628118,
+    "support": 882,
+    "cell_id": 97,
+    "priority": 3.6300787921599422,
+    "rank": 5
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "High"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.5476190476190477,
+    "support": 210,
+    "cell_id": 101,
+    "priority": 2.344623563237134,
+    "rank": 6
+  }
+]

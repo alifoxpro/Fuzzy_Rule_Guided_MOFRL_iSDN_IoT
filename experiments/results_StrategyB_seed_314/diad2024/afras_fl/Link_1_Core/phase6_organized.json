@@ -1,0 +1,82 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5145985401459854,
+    "support": 693,
+    "cell_id": 6,
+    "priority": 5.050119779734267,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6792452830188679,
+    "support": 446,
+    "cell_id": 11,
+    "priority": 4.145134139737518,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "High"
+      ],
+      [
+        "fwd_packets_per_s",
+        "High"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.685981308411215,
+    "support": 1070,
+    "cell_id": 62,
+    "priority": 3.8285155018382415,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.6410505836575876,
+    "support": 1028,
+    "cell_id": 0,
+    "priority": 3.5572372474043883,
+    "rank": 4
+  }
+]

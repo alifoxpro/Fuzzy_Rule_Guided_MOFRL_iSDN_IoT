@@ -1,0 +1,216 @@
+{
+  "link_name": "Link_4_Edge_L",
+  "feature_names": [
+    "pkt_len_min",
+    "flow_duration"
+  ],
+  "n_rules": 8,
+  "membership_params": {
+    "pkt_len_min": {
+      "Low": {
+        "center": -0.19136972724403,
+        "width": 0.17434823017972947
+      },
+      "Medium": {
+        "center": 0.05271779500759127,
+        "width": 0.17434823017972947
+      },
+      "High": {
+        "center": 0.29680531725921255,
+        "width": 0.17434823017972947
+      },
+      "range": [
+        -0.2959786653518677,
+        0.40141424536705017
+      ]
+    },
+    "flow_duration": {
+      "Low": {
+        "center": -0.2680859163304672,
+        "width": 0.17739297699588777
+      },
+      "Medium": {
+        "center": -0.01973574853622434,
+        "width": 0.17739297699588777
+      },
+      "High": {
+        "center": 0.2286144192580185,
+        "width": 0.17739297699588777
+      },
+      "range": [
+        -0.3745217025279999,
+        0.33505019545555115
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Medium"
+        ],
+        [
+          "flow_duration",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.8479381443298969,
+      "support": 28687,
+      "cell_id": 15,
+      "priority": 11.609473949691086,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "High"
+        ],
+        [
+          "flow_duration",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.7667844522968198,
+      "support": 283,
+      "cell_id": 118,
+      "priority": 6.497318425870928,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Low"
+        ],
+        [
+          "flow_duration",
+          "High"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.9924812030075187,
+      "support": 278,
+      "cell_id": 3,
+      "priority": 5.588871843612182,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Medium"
+        ],
+        [
+          "flow_duration",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6753246753246753,
+      "support": 231,
+      "cell_id": 9,
+      "priority": 5.517474220648989,
+      "rank": 4
+    },
+    {
+      "rule_id": 4,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Low"
+        ],
+        [
+          "flow_duration",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.5317460317460317,
+      "support": 294,
+      "cell_id": 4,
+      "priority": 3.8638158903895903,
+      "rank": 5
+    },
+    {
+      "rule_id": 5,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Low"
+        ],
+        [
+          "flow_duration",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5259365994236311,
+      "support": 694,
+      "cell_id": 2,
+      "priority": 3.441682742984365,
+      "rank": 6
+    },
+    {
+      "rule_id": 6,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "Medium"
+        ],
+        [
+          "flow_duration",
+          "High"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6204081632653061,
+      "support": 245,
+      "cell_id": 112,
+      "priority": 3.415552626374364,
+      "rank": 7
+    },
+    {
+      "rule_id": 7,
+      "antecedents": [
+        [
+          "pkt_len_min",
+          "High"
+        ],
+        [
+          "flow_duration",
+          "High"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5555555555555556,
+      "support": 63,
+      "cell_id": 117,
+      "priority": 2.3104906018664844,
+      "rank": 8
+    }
+  ],
+  "summary": {
+    "total_rules": 8,
+    "block_rules": 4,
+    "limit_rules": 4,
+    "allow_rules": 0,
+    "avg_confidence": 0.6895218531186794,
+    "avg_support": 3846.875
+  }
+}

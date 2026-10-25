@@ -1,0 +1,176 @@
+{
+  "link_name": "Link_2_Aggregation_L",
+  "feature_names": [
+    "flow_iat_mean",
+    "fwd_header_length"
+  ],
+  "n_rules": 6,
+  "membership_params": {
+    "flow_iat_mean": {
+      "Low": {
+        "center": -1.016759340455185,
+        "width": 0.8533514465059662
+      },
+      "Medium": {
+        "center": 0.1779326846531677,
+        "width": 0.8533514465059662
+      },
+      "High": {
+        "center": 1.3726247097615203,
+        "width": 0.8533514465059662
+      },
+      "range": [
+        -1.5287702083587646,
+        1.8846355676651
+      ]
+    },
+    "fwd_header_length": {
+      "Low": {
+        "center": -0.6794840857287752,
+        "width": 1.8068232859339142
+      },
+      "Medium": {
+        "center": 1.8500685145787048,
+        "width": 1.8068232859339142
+      },
+      "High": {
+        "center": 4.379621114886184,
+        "width": 1.8068232859339142
+      },
+      "range": [
+        -1.7635780572891235,
+        5.463715076446533
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Medium"
+        ],
+        [
+          "fwd_header_length",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.7480916030534351,
+      "support": 11465,
+      "cell_id": 16,
+      "priority": 8.931009118155467,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Medium"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6058981233243967,
+      "support": 23947,
+      "cell_id": 75,
+      "priority": 7.153819029293927,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "fwd_header_length",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6140845070422535,
+      "support": 710,
+      "cell_id": 6,
+      "priority": 6.04873770294552,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5729323308270676,
+      "support": 665,
+      "cell_id": 0,
+      "priority": 3.724799044324644,
+      "rank": 4
+    },
+    {
+      "rule_id": 4,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "fwd_header_length",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6056782334384858,
+      "support": 317,
+      "cell_id": 115,
+      "priority": 3.489949102504082,
+      "rank": 5
+    },
+    {
+      "rule_id": 5,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "fwd_header_length",
+          "Low"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.5408560311284046,
+      "support": 257,
+      "cell_id": 118,
+      "priority": 2.4026813456937113,
+      "rank": 6
+    }
+  ],
+  "summary": {
+    "total_rules": 6,
+    "block_rules": 3,
+    "limit_rules": 2,
+    "allow_rules": 1,
+    "avg_confidence": 0.6145901381356739,
+    "avg_support": 6226.833333333333
+  }
+}

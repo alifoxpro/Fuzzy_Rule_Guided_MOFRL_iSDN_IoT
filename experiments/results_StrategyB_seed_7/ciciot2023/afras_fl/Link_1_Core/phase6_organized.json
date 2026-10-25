@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 153558,
+    "cell_id": 11,
+    "priority": 17.912760205471503,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.67098703888335,
+    "support": 145014,
+    "cell_id": 16,
+    "priority": 7.974407505974934,
+    "rank": 2
+  }
+]

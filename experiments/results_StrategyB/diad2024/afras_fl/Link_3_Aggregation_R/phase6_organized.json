@@ -1,0 +1,142 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 125961,
+    "cell_id": 3,
+    "priority": 15.892587737219557,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 24008,
+    "cell_id": 69,
+    "priority": 15.129276058552735,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 9181,
+    "cell_id": 74,
+    "priority": 13.687500487213752,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 21043,
+    "cell_id": 68,
+    "priority": 11.542272108576915,
+    "rank": 4
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 1889,
+    "cell_id": 73,
+    "priority": 11.316498162080533,
+    "rank": 5
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.9994330262225372,
+    "support": 61781,
+    "cell_id": 71,
+    "priority": 11.020686799414628,
+    "rank": 6
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 73,
+    "cell_id": 70,
+    "priority": 6.456097639806256,
+    "rank": 7
+  }
+]

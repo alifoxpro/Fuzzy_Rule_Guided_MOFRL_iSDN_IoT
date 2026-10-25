@@ -1,0 +1,25 @@
+{
+  "dataset": "diad2024",
+  "label": "DIAD2024",
+  "scope": "DIAD2024 \u2014 Isolated Train & Test",
+  "ranking": [
+    "LSTM-Only",
+    "CNN-Transformer",
+    "Mamba-Only"
+  ],
+  "closeness_coefficients": {
+    "LSTM-Only": 0.8862856895103606,
+    "Mamba-Only": 0.08459620543806265,
+    "CNN-Transformer": 0.7193739084096659
+  },
+  "optimal_model": "LSTM-Only",
+  "optimal_cc": 0.8862856895103606,
+  "sensitivity_winners": {
+    "S1: Equal Weights": "LSTM-Only",
+    "S2: Performance Focus": "LSTM-Only",
+    "S3: Speed Focus": "LSTM-Only",
+    "S4: Efficiency Focus": "LSTM-Only",
+    "S5: Robustness Focus": "LSTM-Only",
+    "S6: Original (Proposed)": "LSTM-Only"
+  }
+}

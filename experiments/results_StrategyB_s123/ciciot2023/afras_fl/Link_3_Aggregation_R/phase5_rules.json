@@ -1,0 +1,182 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Low"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5061349693251533,
+    "support": 326,
+    "cell_id": 0
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Low"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5080147965474723,
+    "support": 811,
+    "cell_id": 1
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Low"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5217391304347826,
+    "support": 161,
+    "cell_id": 4
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6260504201680672,
+    "support": 1563,
+    "cell_id": 8
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.6285046728971962,
+    "support": 8038,
+    "cell_id": 9
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5852534562211982,
+    "support": 2379,
+    "cell_id": 34
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6046511627906976,
+    "support": 829,
+    "cell_id": 80
+  },
+  {
+    "rule_id": 7,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.5698924731182796,
+    "support": 354,
+    "cell_id": 83
+  },
+  {
+    "rule_id": 8,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "Medium"
+      ],
+      [
+        "fwd_header_length",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6181818181818182,
+    "support": 250,
+    "cell_id": 101
+  },
+  {
+    "rule_id": 9,
+    "antecedents": [
+      [
+        "flow_iat_mean",
+        "High"
+      ],
+      [
+        "fwd_header_length",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6723404255319149,
+    "support": 235,
+    "cell_id": 182
+  }
+]

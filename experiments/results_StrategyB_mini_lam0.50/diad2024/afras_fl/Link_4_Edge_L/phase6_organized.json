@@ -1,0 +1,122 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 39165,
+    "cell_id": 3,
+    "priority": 13.446084192330495,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 6543,
+    "cell_id": 67,
+    "priority": 13.179455817423875,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 2280,
+    "cell_id": 72,
+    "priority": 11.598553833426582,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 7112,
+    "cell_id": 66,
+    "priority": 9.783139197255228,
+    "rank": 4
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.9959405699439798,
+    "support": 16237,
+    "cell_id": 69,
+    "priority": 9.655752834710764,
+    "rank": 5
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 496,
+    "cell_id": 71,
+    "priority": 9.312885039144943,
+    "rank": 6
+  }
+]

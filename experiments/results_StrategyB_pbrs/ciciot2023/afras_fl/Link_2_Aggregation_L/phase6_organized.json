@@ -1,0 +1,84 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7403846153846154,
+    "support": 416,
+    "cell_id": 0,
+    "priority": 6.700206332863093,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Medium"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.8051282051282052,
+    "support": 195,
+    "cell_id": 11,
+    "priority": 6.374338473070701,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.40279661901283526,
+    "support": 9583,
+    "cell_id": 10,
+    "diversity_relaxed": true,
+    "priority": 3.6927791126548253,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.4361559139784946,
+    "support": 1488,
+    "cell_id": 8,
+    "diversity_relaxed": true,
+    "priority": 2.5491952479633992,
+    "rank": 4
+  }
+]

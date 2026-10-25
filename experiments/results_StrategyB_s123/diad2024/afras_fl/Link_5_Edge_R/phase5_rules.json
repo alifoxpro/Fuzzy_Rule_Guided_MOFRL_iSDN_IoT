@@ -1,0 +1,218 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.9049586776859504,
+    "support": 39595,
+    "cell_id": 0
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 22833,
+    "cell_id": 4
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.9041095890410958,
+    "support": 1036,
+    "cell_id": 24
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Low"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 163,
+    "cell_id": 77
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.7520112185401137,
+    "support": 13549,
+    "cell_id": 78
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 1152,
+    "cell_id": 79
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 13583,
+    "cell_id": 80
+  },
+  {
+    "rule_id": 7,
+    "antecedents": [
+      [
+        "flow_duration",
+        "Medium"
+      ],
+      [
+        "flow_iat_mean",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 1305,
+    "cell_id": 81
+  },
+  {
+    "rule_id": 8,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 28333,
+    "cell_id": 82
+  },
+  {
+    "rule_id": 9,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 109,
+    "cell_id": 83
+  },
+  {
+    "rule_id": 10,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 637,
+    "cell_id": 84
+  },
+  {
+    "rule_id": 11,
+    "antecedents": [
+      [
+        "flow_duration",
+        "High"
+      ],
+      [
+        "flow_iat_mean",
+        "High"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 1.0,
+    "support": 4023,
+    "cell_id": 85
+  }
+]

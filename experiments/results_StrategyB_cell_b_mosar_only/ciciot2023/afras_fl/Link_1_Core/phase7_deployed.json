@@ -1,0 +1,117 @@
+{
+  "link_name": "Link_1_Core",
+  "feature_names": [
+    "flow_duration",
+    "pkt_len_min"
+  ],
+  "n_rules": 3,
+  "membership_params": {
+    "flow_duration": {
+      "Low": {
+        "center": 3.45849853755032,
+        "width": 5.876854012426319
+      },
+      "Medium": {
+        "center": 11.686094154947167,
+        "width": 5.876854012426319
+      },
+      "High": {
+        "center": 19.913689772344014,
+        "width": 5.876854012426319
+      },
+      "range": [
+        -0.0676138699054718,
+        23.439802169799805
+      ]
+    },
+    "pkt_len_min": {
+      "Low": {
+        "center": 0.7477638796070709,
+        "width": 2.231598111506882
+      },
+      "Medium": {
+        "center": 3.8720012357167057,
+        "width": 2.231598111506882
+      },
+      "High": {
+        "center": 6.99623859182634,
+        "width": 2.231598111506882
+      },
+      "range": [
+        -0.5911949872970581,
+        8.335197448730469
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Low"
+        ],
+        [
+          "pkt_len_min",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6688311688311688,
+      "support": 72421,
+      "cell_id": 2,
+      "priority": 11.226597430137016,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Low"
+        ],
+        [
+          "pkt_len_min",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6813048933500627,
+      "support": 23681,
+      "cell_id": 4,
+      "priority": 6.862423470358544,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_duration",
+          "Low"
+        ],
+        [
+          "pkt_len_min",
+          "Low"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.4246027576217997,
+      "support": 352115,
+      "cell_id": 3,
+      "diversity_relaxed": true,
+      "priority": 4.3383246481010564,
+      "rank": 3
+    }
+  ],
+  "summary": {
+    "total_rules": 3,
+    "block_rules": 1,
+    "limit_rules": 1,
+    "allow_rules": 1,
+    "avg_confidence": 0.5915796066010104,
+    "avg_support": 149405.66666666666
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "Stage 3 \u2014 Isolated per Dataset",
+  "datasets": {
+    "ciciot2023": {
+      "dataset": "ciciot2023",
+      "label": "CICIoT2023",
+      "scope": "CICIoT2023 \u2014 Isolated Train & Test",
+      "ranking": [
+        "Mamba-Only",
+        "CNN-Transformer",
+        "LSTM-Only"
+      ],
+      "closeness_coefficients": {
+        "LSTM-Only": 0.32248141650249645,
+        "Mamba-Only": 0.6489022947817183,
+        "CNN-Transformer": 0.35279724246023497
+      },
+      "optimal_model": "Mamba-Only",
+      "optimal_cc": 0.6489022947817183,
+      "sensitivity_winners": {
+        "S1: Equal Weights": "Mamba-Only",
+        "S2: Performance Focus": "Mamba-Only",
+        "S3: Speed Focus": "CNN-Transformer",
+        "S4: Efficiency Focus": "Mamba-Only",
+        "S5: Robustness Focus": "Mamba-Only",
+        "S6: Original (Proposed)": "Mamba-Only"
+      }
+    },
+    "diad2024": {
+      "dataset": "diad2024",
+      "label": "DIAD2024",
+      "scope": "DIAD2024 \u2014 Isolated Train & Test",
+      "ranking": [
+        "LSTM-Only",
+        "CNN-Transformer",
+        "Mamba-Only"
+      ],
+      "closeness_coefficients": {
+        "LSTM-Only": 0.8862856895103606,
+        "Mamba-Only": 0.08459620543806265,
+        "CNN-Transformer": 0.7193739084096659
+      },
+      "optimal_model": "LSTM-Only",
+      "optimal_cc": 0.8862856895103606,
+      "sensitivity_winners": {
+        "S1: Equal Weights": "LSTM-Only",
+        "S2: Performance Focus": "LSTM-Only",
+        "S3: Speed Focus": "LSTM-Only",
+        "S4: Efficiency Focus": "LSTM-Only",
+        "S5: Robustness Focus": "LSTM-Only",
+        "S6: Original (Proposed)": "LSTM-Only"
+      }
+    }
+  }
+}

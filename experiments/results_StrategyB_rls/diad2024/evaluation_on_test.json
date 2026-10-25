@@ -1,0 +1,213 @@
+{
+  "dataset": "diad2024",
+  "n_episodes": 50,
+  "phases": {
+    "B2_FedAvg": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.610396,
+          "msr_std": 0.006404434713540297,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.2563571921141639,
+          "eval_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.51728,
+          "msr_std": 0.006370054944817983,
+          "fpr_mean": 0.33,
+          "fpr_std": 0.4313930922024598,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.22720168834399979,
+          "eval_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.9998360000000001,
+          "msr_std": 0.00016341358572652374,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.49626773195809454,
+          "eval_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.9417679999999998,
+          "msr_std": 0.001878450425217557,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4608974309039236,
+          "eval_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.8949520000000001,
+          "msr_std": 0.003479898849104666,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4327201095905048,
+          "eval_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.7928464,
+      "msr_std_of_links": 0.1921837039268418,
+      "fpr_mean_of_links": 0.066,
+      "fnr_mean_of_links": 0.0,
+      "jfi": 0.9445043474361112
+    },
+    "B3_FedProx": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.958244,
+          "msr_std": 0.0021571425543992265,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4953722395657361,
+          "eval_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.754988,
+          "msr_std": 0.005369306845394476,
+          "fpr_mean": 0.33,
+          "fpr_std": 0.4313930922024598,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.39024975667620354,
+          "eval_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.9977159999999999,
+          "msr_std": 0.0006262140209225687,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.49499601309708297,
+          "eval_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.9451560000000001,
+          "msr_std": 0.0022713132764988595,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4633281795389978,
+          "eval_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.895148,
+          "msr_std": 0.00350309805743431,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4327462520368769,
+          "eval_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.9102504,
+      "msr_std_of_links": 0.08426922697545053,
+      "fpr_mean_of_links": 0.066,
+      "fnr_mean_of_links": 0.0,
+      "jfi": 0.9915021332650842
+    },
+    "B4_Fuzzy": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.993004,
+          "msr_std": 0.0009678760251189243,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.5330404671899839,
+          "eval_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.6828919999999999,
+          "msr_std": 0.004624320058127471,
+          "fpr_mean": 0.23,
+          "fpr_std": 0.3769615364994153,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.35151303535422995,
+          "eval_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.9949039999999999,
+          "msr_std": 0.0008802181547775571,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.5239269567942793,
+          "eval_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.9545600000000001,
+          "msr_std": 0.001772681584492827,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.47179872726379146,
+          "eval_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.893392,
+          "msr_std": 0.00356739905253113,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.48244669046495525,
+          "eval_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.9037503999999998,
+      "msr_std_of_links": 0.11639804865993245,
+      "fpr_mean_of_links": 0.046,
+      "fnr_mean_of_links": 0.0,
+      "jfi": 0.9836826582508676
+    }
+  }
+}

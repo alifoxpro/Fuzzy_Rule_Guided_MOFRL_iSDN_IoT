@@ -1,0 +1,256 @@
+{
+  "link_name": "Link_2_Aggregation_L",
+  "feature_names": [
+    "ack_flag_count",
+    "syn_flag_count"
+  ],
+  "n_rules": 10,
+  "membership_params": {
+    "ack_flag_count": {
+      "Low": {
+        "center": -0.21372372805083845,
+        "width": 0.1843046496476555
+      },
+      "Medium": {
+        "center": 0.04430278145587924,
+        "width": 0.1843046496476555
+      },
+      "High": {
+        "center": 0.302329290962597,
+        "width": 0.1843046496476555
+      },
+      "range": [
+        -0.32430651783943176,
+        0.4129120707511902
+      ]
+    },
+    "syn_flag_count": {
+      "Low": {
+        "center": -0.24731129704917526,
+        "width": 0.1702178965176964
+      },
+      "Medium": {
+        "center": -0.009006241924400304,
+        "width": 0.1702178965176964
+      },
+      "High": {
+        "center": 0.2292988132003746,
+        "width": 0.1702178965176964
+      },
+      "range": [
+        -0.3494420349597931,
+        0.33142954111099243
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Medium"
+        ],
+        [
+          "syn_flag_count",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.8503740648379052,
+      "support": 6626,
+      "cell_id": 28,
+      "priority": 11.223544095269645,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Low"
+        ],
+        [
+          "syn_flag_count",
+          "High"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 1385,
+      "cell_id": 4,
+      "priority": 10.851265769624773,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Medium"
+        ],
+        [
+          "syn_flag_count",
+          "High"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.8401898734177216,
+      "support": 632,
+      "cell_id": 113,
+      "priority": 8.129429891199107,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Medium"
+        ],
+        [
+          "syn_flag_count",
+          "Medium"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.761455525606469,
+      "support": 33612,
+      "cell_id": 50,
+      "priority": 6.349118619272176,
+      "rank": 4
+    },
+    {
+      "rule_id": 4,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "High"
+        ],
+        [
+          "syn_flag_count",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.78125,
+      "support": 200,
+      "cell_id": 114,
+      "priority": 6.21481043913173,
+      "rank": 5
+    },
+    {
+      "rule_id": 5,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Low"
+        ],
+        [
+          "syn_flag_count",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6166666666666667,
+      "support": 323,
+      "cell_id": 1,
+      "priority": 5.347187752107905,
+      "rank": 6
+    },
+    {
+      "rule_id": 6,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Low"
+        ],
+        [
+          "syn_flag_count",
+          "High"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6885698509110988,
+      "support": 1811,
+      "cell_id": 3,
+      "priority": 5.165779430587436,
+      "rank": 7
+    },
+    {
+      "rule_id": 7,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Medium"
+        ],
+        [
+          "syn_flag_count",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5503439649781113,
+      "support": 7721,
+      "cell_id": 23,
+      "priority": 4.92658488780818,
+      "rank": 8
+    },
+    {
+      "rule_id": 8,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "Low"
+        ],
+        [
+          "syn_flag_count",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6285460992907801,
+      "support": 2256,
+      "cell_id": 2,
+      "priority": 4.853502100854284,
+      "rank": 9
+    },
+    {
+      "rule_id": 9,
+      "antecedents": [
+        [
+          "ack_flag_count",
+          "High"
+        ],
+        [
+          "syn_flag_count",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6074074074074074,
+      "support": 135,
+      "cell_id": 121,
+      "priority": 4.475974451448403,
+      "rank": 10
+    }
+  ],
+  "summary": {
+    "total_rules": 10,
+    "block_rules": 6,
+    "limit_rules": 3,
+    "allow_rules": 1,
+    "avg_confidence": 0.7324803453116161,
+    "avg_support": 5470.1
+  }
+}

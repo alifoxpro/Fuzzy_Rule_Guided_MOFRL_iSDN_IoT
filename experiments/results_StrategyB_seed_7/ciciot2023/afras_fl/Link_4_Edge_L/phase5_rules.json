@@ -1,0 +1,75 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Low"
+      ],
+      [
+        "protocol_type",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6065573770491803,
+    "support": 61,
+    "cell_id": 4
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "protocol_type",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5609756097560976,
+    "support": 1634,
+    "cell_id": 68
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "High"
+      ],
+      [
+        "protocol_type",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5497630331753555,
+    "support": 211,
+    "cell_id": 113
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "syn_flag_count",
+        "Medium"
+      ],
+      [
+        "protocol_type",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.484149855907781,
+    "support": 347,
+    "cell_id": 21,
+    "diversity_relaxed": true
+  }
+]

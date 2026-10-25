@@ -1,0 +1,96 @@
+{
+  "link_name": "Link_1_Core",
+  "feature_names": [
+    "flow_packets_per_s",
+    "fwd_packets_per_s"
+  ],
+  "n_rules": 2,
+  "membership_params": {
+    "flow_packets_per_s": {
+      "Low": {
+        "center": 0.12606485039984128,
+        "width": 0.5387063051428223
+      },
+      "Medium": {
+        "center": 0.8802536775997925,
+        "width": 0.5387063051428223
+      },
+      "High": {
+        "center": 1.6344425047997435,
+        "width": 0.5387063051428223
+      },
+      "range": [
+        -0.19715893268585205,
+        1.957666277885437
+      ]
+    },
+    "fwd_packets_per_s": {
+      "Low": {
+        "center": 0.12745877207313916,
+        "width": 0.5420816789235496
+      },
+      "Medium": {
+        "center": 0.8863731225661087,
+        "width": 0.5420816789235496
+      },
+      "High": {
+        "center": 1.645287473059078,
+        "width": 0.5420816789235496
+      },
+      "range": [
+        -0.1977902352809906,
+        1.970536470413208
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Low"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6206896551724138,
+      "support": 2144,
+      "cell_id": 6,
+      "priority": 4.393976520792208,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "High"
+        ],
+        [
+          "fwd_packets_per_s",
+          "High"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.6434262948207171,
+      "support": 1004,
+      "cell_id": 62,
+      "priority": 3.5582724000307504,
+      "rank": 2
+    }
+  ],
+  "summary": {
+    "total_rules": 2,
+    "block_rules": 0,
+    "limit_rules": 1,
+    "allow_rules": 1,
+    "avg_confidence": 0.6320579749965655,
+    "avg_support": 1574.0
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "dataset": "diad2024",
+  "n_episodes": 10,
+  "phases": {
+    "B4_Fuzzy": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 10,
+          "msr_mean": 0.9926600000000001,
+          "msr_std": 0.0013857849761055878,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.5328850434210812,
+          "eval_windows": 94471
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 10,
+          "msr_mean": 0.67874,
+          "msr_std": 0.004125093938324322,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.34806743885645053,
+          "eval_windows": 73363
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 10,
+          "msr_mean": 0.9949399999999999,
+          "msr_std": 0.0012265398485169637,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.5241285254637376,
+          "eval_windows": 95509
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 10,
+          "msr_mean": 0.9572800000000001,
+          "msr_std": 0.0019538679586911744,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.473262904167853,
+          "eval_windows": 36136
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 10,
+          "msr_mean": 0.8953399999999998,
+          "msr_std": 0.0030620907889871525,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.4836074961191855,
+          "eval_windows": 67718
+        }
+      ],
+      "msr_mean_of_links": 0.9037919999999999,
+      "msr_std_of_links": 0.11814083500636012,
+      "fpr_mean_of_links": 0.0,
+      "fnr_mean_of_links": 0.0,
+      "jfi": 0.9832001645063834
+    }
+  }
+}

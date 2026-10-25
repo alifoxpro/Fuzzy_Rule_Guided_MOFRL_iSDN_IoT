@@ -1,0 +1,464 @@
+
+== phase_msr: Phase-by-phase results, canonical run (experiments/results_StrategyB) -- PASS
+  ok  CICIoT2023 B1 mean_msr                               computed 0.9985   paper 0.9985
+  ok  CICIoT2023 B1 std_msr                                computed 0.0018   paper 0.0018
+  ok  CICIoT2023 B1 jain_fairness                          computed 1.0000   paper 1.0000
+  ok  CICIoT2023 B1 mean_fpr                               computed 0.0004   paper 0.0004
+  ok  CICIoT2023 B1 mean_fnr                               computed 0.0000   paper 0.0000
+  ok  CICIoT2023 B1 mean_reward                            computed 0.566   paper 0.566
+  ok  CICIoT2023 B2 mean_msr                               computed 0.9817   paper 0.9817
+  ok  CICIoT2023 B2 std_msr                                computed 0.0147   paper 0.0147
+  ok  CICIoT2023 B2 jain_fairness                          computed 0.9998   paper 0.9998
+  ok  CICIoT2023 B2 mean_fpr                               computed 0.0199   paper 0.0199
+  ok  CICIoT2023 B2 mean_fnr                               computed 0.0008   paper 0.0008
+  ok  CICIoT2023 B2 mean_reward                            computed 0.556   paper 0.556
+  ok  CICIoT2023 B3 mean_msr                               computed 0.9978   paper 0.9978
+  ok  CICIoT2023 B3 std_msr                                computed 0.0028   paper 0.0028
+  ok  CICIoT2023 B3 jain_fairness                          computed 1.0000   paper 1.0000
+  ok  CICIoT2023 B3 mean_fpr                               computed 0.0036   paper 0.0036
+  ok  CICIoT2023 B3 mean_fnr                               computed 0.0053   paper 0.0053
+  ok  CICIoT2023 B3 mean_reward                            computed 0.565   paper 0.565
+  ok  CICIoT2023 B4 mean_msr                               computed 0.9990   paper 0.9990
+  ok  CICIoT2023 B4 std_msr                                computed 0.0010   paper 0.0010
+  ok  CICIoT2023 B4 jain_fairness                          computed 1.0000   paper 1.0000
+  ok  CICIoT2023 B4 mean_fpr                               computed 0.0026   paper 0.0026
+  ok  CICIoT2023 B4 mean_fnr                               computed 0.0001   paper 0.0001
+  ok  CICIoT2023 B4 mean_reward                            computed 0.554   paper 0.554
+  ok  DIAD2024 B1 mean_msr                                 computed 0.9996   paper 0.9996
+  ok  DIAD2024 B1 std_msr                                  computed 0.0004   paper 0.0004
+  ok  DIAD2024 B1 jain_fairness                            computed 1.0000   paper 1.0000
+  ok  DIAD2024 B1 mean_fpr                                 computed 0.0001   paper 0.0001
+  ok  DIAD2024 B1 mean_fnr                                 computed 0.0000   paper 0.0000
+  ok  DIAD2024 B1 mean_reward                              computed 0.506   paper 0.506
+  ok  DIAD2024 B2 mean_msr                                 computed 0.9318   paper 0.9318
+  ok  DIAD2024 B2 std_msr                                  computed 0.0565   paper 0.0565
+  ok  DIAD2024 B2 jain_fairness                            computed 0.9963   paper 0.9963
+  ok  DIAD2024 B2 mean_fpr                                 computed 0.2000   paper 0.2000
+  ok  DIAD2024 B2 mean_fnr                                 computed 0.0002   paper 0.0002
+  ok  DIAD2024 B2 mean_reward                              computed 0.470   paper 0.470
+  ok  DIAD2024 B3 mean_msr                                 computed 0.9028   paper 0.9028
+  ok  DIAD2024 B3 std_msr                                  computed 0.1036   paper 0.1036
+  ok  DIAD2024 B3 jain_fairness                            computed 0.9870   paper 0.9870
+  ok  DIAD2024 B3 mean_fpr                                 computed 0.0018   paper 0.0018
+  ok  DIAD2024 B3 mean_fnr                                 computed 0.0212   paper 0.0212
+  ok  DIAD2024 B3 mean_reward                              computed 0.454   paper 0.454
+  ok  DIAD2024 B4 mean_msr                                 computed 0.8474   paper 0.8474
+  ok  DIAD2024 B4 std_msr                                  computed 0.1505   paper 0.1505
+  ok  DIAD2024 B4 jain_fairness                            computed 0.9694   paper 0.9694
+  ok  DIAD2024 B4 mean_fpr                                 computed 0.0421   paper 0.0421
+  ok  DIAD2024 B4 mean_fnr                                 computed 0.0415   paper 0.0415
+  ok  DIAD2024 B4 mean_reward                              computed 0.414   paper 0.414
+
+== balanced_metrics: Binary detection metrics from the severity-action counts (canonical run) -- PASS
+  ok  CICIoT2023 mosar_fedavg acc                          computed 0.9967   paper 0.9967
+  ok  CICIoT2023 mosar_fedavg prec                         computed 0.9973   paper 0.9973
+  ok  CICIoT2023 mosar_fedavg rec                          computed 0.9992   paper 0.9992
+  ok  CICIoT2023 mosar_fedavg f1                           computed 0.9983   paper 0.9983
+  ok  CICIoT2023 mosar_fedavg macro_f1                     computed 0.9861   paper 0.9861
+  ok  CICIoT2023 mosar_fedavg mcc                          computed 0.9723   paper 0.9723
+  ok  CICIoT2023 mosar_fedprox acc                         computed 0.9985   paper 0.9985
+  ok  CICIoT2023 mosar_fedprox prec                        computed 0.9998   paper 0.9998
+  ok  CICIoT2023 mosar_fedprox rec                         computed 0.9985   paper 0.9985
+  ok  CICIoT2023 mosar_fedprox f1                          computed 0.9992   paper 0.9992
+  ok  CICIoT2023 mosar_fedprox macro_f1                    computed 0.9935   paper 0.9935
+  ok  CICIoT2023 mosar_fedprox mcc                         computed 0.9870   paper 0.9870
+  ok  CICIoT2023 fuzzy_retrain acc                         computed 0.9998   paper 0.9998
+  ok  CICIoT2023 fuzzy_retrain prec                        computed 0.9998   paper 0.9998
+  ok  CICIoT2023 fuzzy_retrain rec                         computed 1.0000   paper 1.0000
+  ok  CICIoT2023 fuzzy_retrain f1                          computed 0.9999   paper 0.9999
+  ok  CICIoT2023 fuzzy_retrain macro_f1                    computed 0.9991   paper 0.9991
+  ok  CICIoT2023 fuzzy_retrain mcc                         computed 0.9982   paper 0.9982
+  ok  DIAD2024 mosar_fedavg acc                            computed 0.9512   paper 0.9512
+  ok  DIAD2024 mosar_fedavg prec                           computed 0.9433   paper 0.9433
+  ok  DIAD2024 mosar_fedavg rec                            computed 0.9998   paper 0.9998
+  ok  DIAD2024 mosar_fedavg f1                             computed 0.9707   paper 0.9707
+  ok  DIAD2024 mosar_fedavg macro_f1                       computed 0.9128   paper 0.9128
+  ok  DIAD2024 mosar_fedavg mcc                            computed 0.8389   paper 0.8389
+  ok  DIAD2024 mosar_fedprox acc                           computed 0.9554   paper 0.9554
+  ok  DIAD2024 mosar_fedprox prec                          computed 0.9515   paper 0.9515
+  ok  DIAD2024 mosar_fedprox rec                           computed 0.9957   paper 0.9957
+  ok  DIAD2024 mosar_fedprox f1                            computed 0.9731   paper 0.9731
+  ok  DIAD2024 mosar_fedprox macro_f1                      computed 0.9217   paper 0.9217
+  ok  DIAD2024 mosar_fedprox mcc                           computed 0.8513   paper 0.8513
+  ok  DIAD2024 fuzzy_retrain acc                           computed 0.8539   paper 0.8539
+  ok  DIAD2024 fuzzy_retrain prec                          computed 0.8999   paper 0.8999
+  ok  DIAD2024 fuzzy_retrain rec                           computed 0.9217   paper 0.9217
+  ok  DIAD2024 fuzzy_retrain f1                            computed 0.9107   paper 0.9107
+  ok  DIAD2024 fuzzy_retrain macro_f1                      computed 0.7552   paper 0.7552
+  ok  DIAD2024 fuzzy_retrain mcc                           computed 0.5119   paper 0.5119
+
+== phase_b0: Phase-B0 rule extraction (results.json -> phase_b0) -- PASS
+  ok  CICIoT2023 L1-Core total_rules                       computed 4   paper 4
+  ok  CICIoT2023 L1-Core block_rules                       computed 3   paper 3
+  ok  CICIoT2023 L1-Core limit_rules                       computed 1   paper 1
+  ok  CICIoT2023 L1-Core allow_rules                       computed 0   paper 0
+  ok  CICIoT2023 L1-Core avg_confidence                    computed 0.972   paper 0.972
+  ok  CICIoT2023 L2-AggrL total_rules                      computed 9   paper 9
+  ok  CICIoT2023 L2-AggrL block_rules                      computed 1   paper 1
+  ok  CICIoT2023 L2-AggrL limit_rules                      computed 0   paper 0
+  ok  CICIoT2023 L2-AggrL allow_rules                      computed 8   paper 8
+  ok  CICIoT2023 L2-AggrL avg_confidence                   computed 0.794   paper 0.794
+  ok  CICIoT2023 L3-AggrR total_rules                      computed 8   paper 8
+  ok  CICIoT2023 L3-AggrR block_rules                      computed 1   paper 1
+  ok  CICIoT2023 L3-AggrR limit_rules                      computed 3   paper 3
+  ok  CICIoT2023 L3-AggrR allow_rules                      computed 4   paper 4
+  ok  CICIoT2023 L3-AggrR avg_confidence                   computed 0.761   paper 0.761
+  ok  CICIoT2023 L4-EdgeL total_rules                      computed 9   paper 9
+  ok  CICIoT2023 L4-EdgeL block_rules                      computed 0   paper 0
+  ok  CICIoT2023 L4-EdgeL limit_rules                      computed 0   paper 0
+  ok  CICIoT2023 L4-EdgeL allow_rules                      computed 9   paper 9
+  ok  CICIoT2023 L4-EdgeL avg_confidence                   computed 1.000   paper 1.000
+  ok  CICIoT2023 L5-EdgeR total_rules                      computed 8   paper 8
+  ok  CICIoT2023 L5-EdgeR block_rules                      computed 1   paper 1
+  ok  CICIoT2023 L5-EdgeR limit_rules                      computed 2   paper 2
+  ok  CICIoT2023 L5-EdgeR allow_rules                      computed 5   paper 5
+  ok  CICIoT2023 L5-EdgeR avg_confidence                   computed 0.779   paper 0.779
+  ok  DIAD2024 L1-Core total_rules                         computed 6   paper 6
+  ok  DIAD2024 L1-Core block_rules                         computed 5   paper 5
+  ok  DIAD2024 L1-Core limit_rules                         computed 1   paper 1
+  ok  DIAD2024 L1-Core allow_rules                         computed 0   paper 0
+  ok  DIAD2024 L1-Core avg_confidence                      computed 0.999   paper 0.999
+  ok  DIAD2024 L2-AggrL total_rules                        computed 6   paper 6
+  ok  DIAD2024 L2-AggrL block_rules                        computed 5   paper 5
+  ok  DIAD2024 L2-AggrL limit_rules                        computed 1   paper 1
+  ok  DIAD2024 L2-AggrL allow_rules                        computed 0   paper 0
+  ok  DIAD2024 L2-AggrL avg_confidence                     computed 1.000   paper 1.000
+  ok  DIAD2024 L3-AggrR total_rules                        computed 7   paper 7
+  ok  DIAD2024 L3-AggrR block_rules                        computed 6   paper 6
+  ok  DIAD2024 L3-AggrR limit_rules                        computed 1   paper 1
+  ok  DIAD2024 L3-AggrR allow_rules                        computed 0   paper 0
+  ok  DIAD2024 L3-AggrR avg_confidence                     computed 1.000   paper 1.000
+  ok  DIAD2024 L4-EdgeL total_rules                        computed 6   paper 6
+  ok  DIAD2024 L4-EdgeL block_rules                        computed 5   paper 5
+  ok  DIAD2024 L4-EdgeL limit_rules                        computed 1   paper 1
+  ok  DIAD2024 L4-EdgeL allow_rules                        computed 0   paper 0
+  ok  DIAD2024 L4-EdgeL avg_confidence                     computed 0.999   paper 0.999
+  ok  DIAD2024 L5-EdgeR total_rules                        computed 6   paper 6
+  ok  DIAD2024 L5-EdgeR block_rules                        computed 5   paper 5
+  ok  DIAD2024 L5-EdgeR limit_rules                        computed 1   paper 1
+  ok  DIAD2024 L5-EdgeR allow_rules                        computed 0   paper 0
+  ok  DIAD2024 L5-EdgeR avg_confidence                     computed 1.000   paper 1.000
+
+== stats: Episode-level Welch t-tests, B4 vs B2/B3 (n = 50 per phase) -- PASS
+  ok  CICIoT2023 B4 vs B2 t                                computed 8.35   paper 8.35
+  ok  CICIoT2023 B4 vs B2 p (2 significant digits)         computed 0.000000000051   paper 0.000000000051
+  ok  CICIoT2023 B4 vs B2 Cohen d                          computed 1.67   paper 1.67
+  ok  CICIoT2023 B4 vs B2 sigma ratio                      computed 14.6   paper 14.6
+  ok  CICIoT2023 B4 vs B3 t                                computed 2.94   paper 2.94
+  ok  CICIoT2023 B4 vs B3 p (2 significant digits)         computed 0.004700000000   paper 0.004700000000
+  ok  CICIoT2023 B4 vs B3 Cohen d                          computed 0.59   paper 0.59
+  ok  CICIoT2023 B4 vs B3 sigma ratio                      computed 2.8   paper 2.8
+  ok  DIAD2024 B4 vs B2 t                                  computed -3.71   paper -3.71
+  ok  DIAD2024 B4 vs B2 p (2 significant digits)           computed 0.000440000000   paper 0.000440000000
+  ok  DIAD2024 B4 vs B2 Cohen d                            computed -0.74   paper -0.74
+  ok  DIAD2024 B4 vs B2 sigma ratio                        computed 0.38   paper 0.38
+  ok  DIAD2024 B4 vs B3 t                                  computed -2.14   paper -2.14
+  ok  DIAD2024 B4 vs B3 p (2 significant digits)           computed 0.035000000000   paper 0.035000000000
+  ok  DIAD2024 B4 vs B3 Cohen d                            computed -0.43   paper -0.43
+  ok  DIAD2024 B4 vs B3 sigma ratio                        computed 0.69   paper 0.69
+
+== lambda_ablation: Lambda ablation on CICIoT2023, phase B4 -- FAIL (1 cell(s))
+  --  lambda=0.00 (MSR/std/JFI/FPR/Reward)                 no result file (results_StrategyB_lam0.00 holds only a mid-training checkpoint)   paper 0.9941+-0.0099 / 1.0000 / 0.0068 / 0.545
+  ok  lambda=0.10 mean_msr [results_StrategyB_lam0.10]     computed 0.9869   paper 0.9869
+  ok  lambda=0.10 std_msr [results_StrategyB_lam0.10]      computed 0.0238   paper 0.0238
+  ok  lambda=0.10 jain_fairness [results_StrategyB_lam0.10] computed 0.9994   paper 0.9994
+  ok  lambda=0.10 mean_fpr [results_StrategyB_lam0.10]     computed 0.0049   paper 0.0049
+  ok  lambda=0.10 mean_reward [results_StrategyB_lam0.10]  computed 0.553   paper 0.553
+  ok  lambda=0.25 mean_msr [results_StrategyB_mini_lam0.25] computed 0.9995   paper 0.9995
+  ok  lambda=0.25 std_msr [results_StrategyB_mini_lam0.25] computed 0.0008   paper 0.0008
+  ok  lambda=0.25 jain_fairness [results_StrategyB_mini_lam0.25] computed 1.0000   paper 1.0000
+  ok  lambda=0.25 mean_fpr [results_StrategyB_mini_lam0.25] computed 0.0143   paper 0.0143
+  ok  lambda=0.25 mean_reward [results_StrategyB_mini_lam0.25] computed 0.573   paper 0.573
+  ok  lambda=0.50 mean_msr [results_StrategyB_lam0.50]     computed 0.9993   paper 0.9993
+  ok  lambda=0.50 std_msr [results_StrategyB_lam0.50]      computed 0.0011   paper 0.0011
+  ok  lambda=0.50 jain_fairness [results_StrategyB_lam0.50] computed 1.0000   paper 1.0000
+  ok  lambda=0.50 mean_fpr [results_StrategyB_lam0.50]     computed 0.0019   paper 0.0019
+  ok  lambda=0.50 mean_reward [results_StrategyB_lam0.50]  computed 0.542   paper 0.542
+
+== lambda_mu_sweep: (lambda, mu) sweep, phase B4 -- FAIL (5 cell(s))
+  ok  (0.10,0.10) CICIoT2023 mean_msr [results_StrategyB_lam0.10] computed 0.9869   paper 0.9869
+  ok  (0.10,0.10) CICIoT2023 jain_fairness [results_StrategyB_lam0.10] computed 0.9994   paper 0.9994
+  ok  (0.10,0.10) CICIoT2023 mean_fpr [results_StrategyB_lam0.10] computed 0.0049   paper 0.0049
+  ok  (0.10,0.10) CICIoT2023 mean_reward [results_StrategyB_lam0.10] computed 0.553   paper 0.553
+  ok  (0.10,0.10) DIAD2024 mean_msr [results_StrategyB_lam0.10_mu0.10_diad] computed 0.9948   paper 0.9948
+  ok  (0.10,0.10) DIAD2024 jain_fairness [results_StrategyB_lam0.10_mu0.10_diad] computed 1.0000   paper 1.0000
+  ok  (0.10,0.10) DIAD2024 mean_fpr [results_StrategyB_lam0.10_mu0.10_diad] computed 0.0000   paper 0.0000
+  XX  (0.10,0.10) DIAD2024 mean_reward [results_StrategyB_lam0.10_mu0.10_diad] computed 0.525   paper 0.529
+  ok  (0.25,0.10) CICIoT2023 mean_msr [results_StrategyB]  computed 0.9990   paper 0.9990
+  ok  (0.25,0.10) CICIoT2023 jain_fairness [results_StrategyB] computed 1.0000   paper 1.0000
+  ok  (0.25,0.10) CICIoT2023 mean_fpr [results_StrategyB]  computed 0.0026   paper 0.0026
+  XX  (0.25,0.10) CICIoT2023 mean_reward [results_StrategyB] computed 0.554   paper 0.573
+  ok  (0.25,0.10) DIAD2024 mean_msr [results_StrategyB]    computed 0.8474   paper 0.8474
+  ok  (0.25,0.10) DIAD2024 jain_fairness [results_StrategyB] computed 0.9694   paper 0.9694
+  ok  (0.25,0.10) DIAD2024 mean_fpr [results_StrategyB]    computed 0.0421   paper 0.0421
+  ok  (0.25,0.10) DIAD2024 mean_reward [results_StrategyB] computed 0.414   paper 0.414
+  ok  (0.50,0.10) CICIoT2023 mean_msr [results_StrategyB_lam0.50] computed 0.9993   paper 0.9993
+  ok  (0.50,0.10) CICIoT2023 jain_fairness [results_StrategyB_lam0.50] computed 1.0000   paper 1.0000
+  ok  (0.50,0.10) CICIoT2023 mean_fpr [results_StrategyB_lam0.50] computed 0.0019   paper 0.0019
+  ok  (0.50,0.10) CICIoT2023 mean_reward [results_StrategyB_lam0.50] computed 0.542   paper 0.542
+  ok  (0.50,0.10) DIAD2024 mean_msr [results_StrategyB_lam0.50_mu0.10_diad] computed 0.9964   paper 0.9964
+  ok  (0.50,0.10) DIAD2024 jain_fairness [results_StrategyB_lam0.50_mu0.10_diad] computed 1.0000   paper 1.0000
+  ok  (0.50,0.10) DIAD2024 mean_fpr [results_StrategyB_lam0.50_mu0.10_diad] computed 0.0080   paper 0.0080
+  XX  (0.50,0.10) DIAD2024 mean_reward [results_StrategyB_lam0.50_mu0.10_diad] computed 0.572   paper 0.531
+  ok  (0.25,0.05) CICIoT2023 mean_msr [results_StrategyB_lam0.25_mu0.05] computed 0.9397   paper 0.9397
+  ok  (0.25,0.05) CICIoT2023 jain_fairness [results_StrategyB_lam0.25_mu0.05] computed 0.9843   paper 0.9843
+  ok  (0.25,0.05) CICIoT2023 mean_fpr [results_StrategyB_lam0.25_mu0.05] computed 0.0045   paper 0.0045
+  ok  (0.25,0.05) CICIoT2023 mean_reward [results_StrategyB_lam0.25_mu0.05] computed 0.549   paper 0.549
+  ok  (0.25,0.05) DIAD2024 mean_msr [results_StrategyB_lam0.25_mu0.05_diad] computed 0.9976   paper 0.9976
+  ok  (0.25,0.05) DIAD2024 jain_fairness [results_StrategyB_lam0.25_mu0.05_diad] computed 1.0000   paper 1.0000
+  ok  (0.25,0.05) DIAD2024 mean_fpr [results_StrategyB_lam0.25_mu0.05_diad] computed 0.0000   paper 0.0000
+  XX  (0.25,0.05) DIAD2024 mean_reward [results_StrategyB_lam0.25_mu0.05_diad] computed 0.545   paper 0.543
+  ok  (0.25,0.20) CICIoT2023 mean_msr [results_StrategyB_lam0.25_mu0.20] computed 0.9397   paper 0.9397
+  ok  (0.25,0.20) CICIoT2023 jain_fairness [results_StrategyB_lam0.25_mu0.20] computed 0.9843   paper 0.9843
+  ok  (0.25,0.20) CICIoT2023 mean_fpr [results_StrategyB_lam0.25_mu0.20] computed 0.0045   paper 0.0045
+  ok  (0.25,0.20) CICIoT2023 mean_reward [results_StrategyB_lam0.25_mu0.20] computed 0.549   paper 0.549
+  ok  (0.25,0.20) DIAD2024 mean_msr [results_StrategyB_lam0.25_mu0.20_diad] computed 0.9959   paper 0.9959
+  ok  (0.25,0.20) DIAD2024 jain_fairness [results_StrategyB_lam0.25_mu0.20_diad] computed 1.0000   paper 1.0000
+  ok  (0.25,0.20) DIAD2024 mean_fpr [results_StrategyB_lam0.25_mu0.20_diad] computed 0.0480   paper 0.0480
+  XX  (0.25,0.20) DIAD2024 mean_reward [results_StrategyB_lam0.25_mu0.20_diad] computed 0.543   paper 0.542
+  ok  (0.10,0.20) CICIoT2023 mean_msr [results_StrategyB_lam0.10_mu0.20] computed 0.9988   paper 0.9988
+  ok  (0.10,0.20) CICIoT2023 jain_fairness [results_StrategyB_lam0.10_mu0.20] computed 1.0000   paper 1.0000
+  ok  (0.10,0.20) CICIoT2023 mean_fpr [results_StrategyB_lam0.10_mu0.20] computed 0.0000   paper 0.0000
+  ok  (0.10,0.20) CICIoT2023 mean_reward [results_StrategyB_lam0.10_mu0.20] computed 0.578   paper 0.578
+  ok  (0.10,0.20) DIAD2024 mean_msr [results_StrategyB_lam0.10_mu0.20_diad] computed 0.9989   paper 0.9989
+  ok  (0.10,0.20) DIAD2024 jain_fairness [results_StrategyB_lam0.10_mu0.20_diad] computed 1.0000   paper 1.0000
+  ok  (0.10,0.20) DIAD2024 mean_fpr [results_StrategyB_lam0.10_mu0.20_diad] computed 0.0080   paper 0.0080
+  ok  (0.10,0.20) DIAD2024 mean_reward [results_StrategyB_lam0.10_mu0.20_diad] computed 0.527   paper 0.527
+
+== topsis_cc: Fuzzy-TOPSIS backbone audit (results/fuzzy_topsis/, regenerated by analysis/fuzzy_topsis_selection.py) -- FAIL (15 cell(s))
+  ok  CICIoT2023 Mamba-Only D+                             computed 0.6432   paper 0.6432
+  XX  CICIoT2023 Mamba-Only D-                             computed 1.1887   paper 1.1893
+  ok  CICIoT2023 Mamba-Only CC                             computed 0.6489   paper 0.6489
+  ok  CICIoT2023 Mamba-Only rank                           computed 1   paper 1
+  XX  CICIoT2023 CNN-Transformer D+                        computed 1.1855   paper 1.1856
+  XX  CICIoT2023 CNN-Transformer D-                        computed 0.6463   paper 0.6462
+  ok  CICIoT2023 CNN-Transformer CC                        computed 0.3528   paper 0.3528
+  ok  CICIoT2023 CNN-Transformer rank                      computed 2   paper 2
+  XX  CICIoT2023 LSTM-Only D+                              computed 1.2488   paper 1.2489
+  XX  CICIoT2023 LSTM-Only D-                              computed 0.5944   paper 0.5942
+  ok  CICIoT2023 LSTM-Only CC                              computed 0.3225   paper 0.3225
+  ok  CICIoT2023 LSTM-Only rank                            computed 3   paper 3
+  XX  DIAD2024 LSTM-Only D+                                computed 0.0803   paper 0.2841
+  XX  DIAD2024 LSTM-Only D-                                computed 0.6257   paper 2.2131
+  ok  DIAD2024 LSTM-Only CC                                computed 0.8863   paper 0.8863
+  ok  DIAD2024 LSTM-Only rank                              computed 1   paper 1
+  XX  DIAD2024 Mamba-Only D+                               computed 0.6463   paper 0.9421
+  XX  DIAD2024 Mamba-Only D-                               computed 0.0597   paper 1.5386
+  XX  DIAD2024 Mamba-Only CC                               computed 0.0846   paper 0.6202
+  XX  DIAD2024 Mamba-Only rank                             computed 3   paper 2
+  XX  DIAD2024 CNN-Transformer D+                          computed 0.1984   paper 1.4507
+  XX  DIAD2024 CNN-Transformer D-                          computed 0.5085   paper 1.0432
+  XX  DIAD2024 CNN-Transformer CC                          computed 0.7194   paper 0.4183
+  XX  DIAD2024 CNN-Transformer rank                        computed 2   paper 3
+
+== rule_stats / rule_stability / rule_dqn_agreement: Rule-base statistics (phase5_rules.json + fuzzy_retrain/results.json) -- FAIL (3 cell(s))
+  ok  CICIoT2023 L1-Core #rules                            computed 6   paper 6
+  ok  CICIoT2023 L1-Core avg conf                          computed 0.941   paper 0.941
+  ok  CICIoT2023 L1-Core avg supp                          computed 49796   paper 49796
+  ok  CICIoT2023 L1-Core B/L/A                             computed 4/2/0   paper 4/2/0
+  ok  CICIoT2023 L1-Core DQN BLOCK frac                    computed 1.000   paper 1.000
+  ok  CICIoT2023 L1-Core rule BLOCK frac                   computed 0.667   paper 0.667
+  ok  CICIoT2023 L1-Core |delta|                           computed 0.333   paper 0.333
+  ok  CICIoT2023 L2-AggrL #rules                           computed 11   paper 11
+  ok  CICIoT2023 L2-AggrL avg conf                         computed 0.800   paper 0.800
+  ok  CICIoT2023 L2-AggrL avg supp                         computed 16386   paper 16386
+  ok  CICIoT2023 L2-AggrL B/L/A                            computed 1/1/9   paper 1/1/9
+  ok  CICIoT2023 L2-AggrL DQN BLOCK frac                   computed 0.982   paper 0.982
+  ok  CICIoT2023 L2-AggrL rule BLOCK frac                  computed 0.091   paper 0.091
+  ok  CICIoT2023 L2-AggrL |delta|                          computed 0.891   paper 0.891
+  ok  CICIoT2023 L3-AggrR #rules                           computed 10   paper 10
+  ok  CICIoT2023 L3-AggrR avg conf                         computed 0.749   paper 0.749
+  ok  CICIoT2023 L3-AggrR avg supp                         computed 9846   paper 9846
+  ok  CICIoT2023 L3-AggrR B/L/A                            computed 1/4/5   paper 1/4/5
+  ok  CICIoT2023 L3-AggrR DQN BLOCK frac                   computed 0.706   paper 0.706
+  ok  CICIoT2023 L3-AggrR rule BLOCK frac                  computed 0.100   paper 0.100
+  ok  CICIoT2023 L3-AggrR |delta|                          computed 0.606   paper 0.606
+  ok  CICIoT2023 L4-EdgeL #rules                           computed 11   paper 11
+  ok  CICIoT2023 L4-EdgeL avg conf                         computed 0.919   paper 0.919
+  ok  CICIoT2023 L4-EdgeL avg supp                         computed 10557   paper 10557
+  ok  CICIoT2023 L4-EdgeL B/L/A                            computed 1/1/9   paper 1/1/9
+  ok  CICIoT2023 L4-EdgeL DQN BLOCK frac                   computed 0.255   paper 0.255
+  ok  CICIoT2023 L4-EdgeL rule BLOCK frac                  computed 0.091   paper 0.091
+  ok  CICIoT2023 L4-EdgeL |delta|                          computed 0.164   paper 0.164
+  ok  CICIoT2023 L5-EdgeR #rules                           computed 11   paper 11
+  ok  CICIoT2023 L5-EdgeR avg conf                         computed 0.748   paper 0.748
+  ok  CICIoT2023 L5-EdgeR avg supp                         computed 10871   paper 10871
+  ok  CICIoT2023 L5-EdgeR B/L/A                            computed 1/3/7   paper 1/3/7
+  XX  CICIoT2023 L5-EdgeR DQN BLOCK frac                   computed 0.965   paper 0.966
+  ok  CICIoT2023 L5-EdgeR rule BLOCK frac                  computed 0.091   paper 0.091
+  ok  CICIoT2023 L5-EdgeR |delta|                          computed 0.875   paper 0.875
+  ok  CICIoT2023 shared>=2                                 computed 11   paper 11
+  ok  CICIoT2023 shared>=3                                 computed 9   paper 9
+  ok  CICIoT2023 unique antecedents                        computed 13   paper 13
+  ok  CICIoT2023 consistent consequents                    computed 5   paper 5
+  ok  CICIoT2023 shared antecedents (denominator)          computed 11   paper 11
+  ok  DIAD2024 L1-Core #rules                              computed 9   paper 9
+  ok  DIAD2024 L1-Core avg conf                            computed 0.937   paper 0.937
+  ok  DIAD2024 L1-Core avg supp                            computed 19467   paper 19467
+  ok  DIAD2024 L1-Core B/L/A                               computed 6/2/1   paper 6/2/1
+  ok  DIAD2024 L1-Core DQN BLOCK frac                      computed 0.494   paper 0.494
+  ok  DIAD2024 L1-Core rule BLOCK frac                     computed 0.667   paper 0.667
+  ok  DIAD2024 L1-Core |delta|                             computed 0.173   paper 0.173
+  ok  DIAD2024 L2-AggrL #rules                             computed 9   paper 9
+  XX  DIAD2024 L2-AggrL avg conf                           computed 0.926   paper 0.927
+  ok  DIAD2024 L2-AggrL avg supp                           computed 16508   paper 16508
+  ok  DIAD2024 L2-AggrL B/L/A                              computed 6/2/1   paper 6/2/1
+  ok  DIAD2024 L2-AggrL DQN BLOCK frac                     computed 0.544   paper 0.544
+  ok  DIAD2024 L2-AggrL rule BLOCK frac                    computed 0.667   paper 0.667
+  ok  DIAD2024 L2-AggrL |delta|                            computed 0.123   paper 0.123
+  ok  DIAD2024 L3-AggrR #rules                             computed 10   paper 10
+  ok  DIAD2024 L3-AggrR avg conf                           computed 0.974   paper 0.974
+  ok  DIAD2024 L3-AggrR avg supp                           computed 24394   paper 24394
+  ok  DIAD2024 L3-AggrR B/L/A                              computed 7/2/1   paper 7/2/1
+  ok  DIAD2024 L3-AggrR DQN BLOCK frac                     computed 0.142   paper 0.142
+  ok  DIAD2024 L3-AggrR rule BLOCK frac                    computed 0.700   paper 0.700
+  ok  DIAD2024 L3-AggrR |delta|                            computed 0.558   paper 0.558
+  ok  DIAD2024 L4-EdgeL #rules                             computed 8   paper 8
+  ok  DIAD2024 L4-EdgeL avg conf                           computed 0.913   paper 0.913
+  ok  DIAD2024 L4-EdgeL avg supp                           computed 8979   paper 8979
+  ok  DIAD2024 L4-EdgeL B/L/A                              computed 5/2/1   paper 5/2/1
+  ok  DIAD2024 L4-EdgeL DQN BLOCK frac                     computed 0.114   paper 0.114
+  ok  DIAD2024 L4-EdgeL rule BLOCK frac                    computed 0.625   paper 0.625
+  ok  DIAD2024 L4-EdgeL |delta|                            computed 0.511   paper 0.511
+  ok  DIAD2024 L5-EdgeR #rules                             computed 9   paper 9
+  ok  DIAD2024 L5-EdgeR avg conf                           computed 0.950   paper 0.950
+  ok  DIAD2024 L5-EdgeR avg supp                           computed 13677   paper 13677
+  ok  DIAD2024 L5-EdgeR B/L/A                              computed 6/2/1   paper 6/2/1
+  ok  DIAD2024 L5-EdgeR DQN BLOCK frac                     computed 0.278   paper 0.278
+  ok  DIAD2024 L5-EdgeR rule BLOCK frac                    computed 0.667   paper 0.667
+  XX  DIAD2024 L5-EdgeR |delta|                            computed 0.388   paper 0.389
+  ok  DIAD2024 shared>=2                                   computed 6   paper 6
+  ok  DIAD2024 shared>=3                                   computed 6   paper 6
+  ok  DIAD2024 unique antecedents                          computed 7   paper 7
+  ok  DIAD2024 consistent consequents                      computed 3   paper 3
+  ok  DIAD2024 shared antecedents (denominator)            computed 6   paper 6
+
+== strategy_ab / strategy_ab_stats: Strategy A (results_StrategyA) vs Strategy B (results_StrategyB) -- PASS
+  ok  CICIoT2023 Indep. A MSR                              computed 0.8903   paper 0.8903
+  ok  CICIoT2023 Indep. A std                              computed 0.1120   paper 0.1120
+  ok  CICIoT2023 Indep. B MSR                              computed 0.9985   paper 0.9985
+  ok  CICIoT2023 Indep. B std                              computed 0.0018   paper 0.0018
+  ok  CICIoT2023 FedAvg A MSR                              computed 0.6511   paper 0.6511
+  ok  CICIoT2023 FedAvg A std                              computed 0.2039   paper 0.2039
+  ok  CICIoT2023 FedAvg B MSR                              computed 0.9817   paper 0.9817
+  ok  CICIoT2023 FedAvg B std                              computed 0.0147   paper 0.0147
+  ok  CICIoT2023 FedProx A MSR                             computed 0.8227   paper 0.8227
+  ok  CICIoT2023 FedProx A std                             computed 0.1357   paper 0.1357
+  ok  CICIoT2023 FedProx B MSR                             computed 0.9978   paper 0.9978
+  ok  CICIoT2023 FedProx B std                             computed 0.0028   paper 0.0028
+  ok  CICIoT2023 FedProx FPR A                             computed 0.0750   paper 0.0750
+  ok  CICIoT2023 FedProx FPR B                             computed 0.0036   paper 0.0036
+  ok  CICIoT2023 A-FedAvg vs B-B2 t                        computed 11.43   paper 11.43
+  ok  CICIoT2023 A-FedAvg vs B-B2 p                        computed 0.000000000000   paper 0.000000000000
+  ok  CICIoT2023 A-FedAvg vs B-B2 Cohen d                  computed 2.29   paper 2.29
+  ok  CICIoT2023 A-FedProx vs B-B4 t                       computed 9.19   paper 9.19
+  ok  CICIoT2023 A-FedProx vs B-B4 p                       computed 0.000000000003   paper 0.000000000003
+  ok  CICIoT2023 A-FedProx vs B-B4 Cohen d                 computed 1.84   paper 1.84
+  ok  DIAD2024 Indep. A MSR                                computed 0.9758   paper 0.9758
+  ok  DIAD2024 Indep. A std                                computed 0.0080   paper 0.0080
+  ok  DIAD2024 Indep. B MSR                                computed 0.9996   paper 0.9996
+  ok  DIAD2024 Indep. B std                                computed 0.0004   paper 0.0004
+  ok  DIAD2024 FedAvg A MSR                                computed 0.8431   paper 0.8431
+  ok  DIAD2024 FedAvg A std                                computed 0.1401   paper 0.1401
+  ok  DIAD2024 FedAvg B MSR                                computed 0.9318   paper 0.9318
+  ok  DIAD2024 FedAvg B std                                computed 0.0565   paper 0.0565
+  ok  DIAD2024 FedProx A MSR                               computed 0.9361   paper 0.9361
+  ok  DIAD2024 FedProx A std                               computed 0.0378   paper 0.0378
+  ok  DIAD2024 FedProx B MSR                               computed 0.9028   paper 0.9028
+  ok  DIAD2024 FedProx B std                               computed 0.1036   paper 0.1036
+  ok  DIAD2024 FedProx FPR A                               computed 0.2698   paper 0.2698
+  ok  DIAD2024 FedProx FPR B                               computed 0.0018   paper 0.0018
+  ok  DIAD2024 A-FedAvg vs B-B2 t                          computed 4.15   paper 4.15
+  ok  DIAD2024 A-FedAvg vs B-B2 p                          computed 0.000098000000   paper 0.000098000000
+  ok  DIAD2024 A-FedAvg vs B-B2 Cohen d                    computed 0.83   paper 0.83
+  ok  DIAD2024 A-FedProx vs B-B4 t                         computed -4.04   paper -4.04
+  ok  DIAD2024 A-FedProx vs B-B4 p                         computed 0.000170000000   paper 0.000170000000
+  ok  DIAD2024 A-FedProx vs B-B4 Cohen d                   computed -0.81   paper -0.81
+
+== rls_test / rls_balanced / rls_l9_mitigation: Record-level TEST split (results_StrategyB_rls) -- FAIL (5 cell(s))
+  ok  DIAD2024 B2_FedAvg MSR [evaluation_on_test.json]     computed 0.7928   paper 0.7928
+  ok  DIAD2024 B2_FedAvg JFI [evaluation_on_test.json]     computed 0.9445   paper 0.9445
+  ok  DIAD2024 B2_FedAvg FPR [evaluation_on_test.json]     computed 0.066   paper 0.066
+  ok  DIAD2024 B2_FedAvg FNR [evaluation_on_test.json]     computed 0.000   paper 0.000
+  ok  DIAD2024 B2_FedAvg specificity                       computed 0.934   paper 0.934
+  ok  DIAD2024 B2_FedAvg balanced acc.                     computed 0.967   paper 0.967
+  ok  DIAD2024 B3_FedProx MSR [evaluation_on_test.json]    computed 0.9103   paper 0.9103
+  ok  DIAD2024 B3_FedProx JFI [evaluation_on_test.json]    computed 0.9915   paper 0.9915
+  ok  DIAD2024 B3_FedProx FPR [evaluation_on_test.json]    computed 0.066   paper 0.066
+  ok  DIAD2024 B3_FedProx FNR [evaluation_on_test.json]    computed 0.000   paper 0.000
+  ok  DIAD2024 B3_FedProx specificity                      computed 0.934   paper 0.934
+  ok  DIAD2024 B3_FedProx balanced acc.                    computed 0.967   paper 0.967
+  ok  DIAD2024 B4_Fuzzy MSR [evaluation_on_test.json]      computed 0.9038   paper 0.9038
+  ok  DIAD2024 B4_Fuzzy JFI [evaluation_on_test.json]      computed 0.9837   paper 0.9837
+  ok  DIAD2024 B4_Fuzzy FPR [evaluation_on_test.json]      computed 0.046   paper 0.046
+  ok  DIAD2024 B4_Fuzzy FNR [evaluation_on_test.json]      computed 0.000   paper 0.000
+  ok  DIAD2024 B4_Fuzzy specificity                        computed 0.954   paper 0.954
+  ok  DIAD2024 B4_Fuzzy balanced acc.                      computed 0.977   paper 0.977
+  --  CICIoT2023 B2_FedAvg MSR/JFI/FPR/FNR                 no result file (overwritten by the B4-only L9 re-run on 2026-08-29)   paper 0.8642/0.9731/0.8/0.0
+  --  CICIoT2023 B3_FedProx MSR/JFI/FPR/FNR                no result file (overwritten by the B4-only L9 re-run on 2026-08-29)   paper 0.6292/0.7906/0.451/0.0
+  --  CICIoT2023 B4 original MSR/JFI/FPR                   no result file (the B4 model and its evaluation were replaced by the L9-mitigated re-run)   paper 0.6959/0.9073/0.737
+  ok  CICIoT2023 B4 L9-mitigated MSR                       computed 0.6786   paper 0.6786
+  XX  CICIoT2023 B4 L9-mitigated FPR                       computed 0.280   paper 0.279
+  ok  CICIoT2023 B4 L9-mitigated JFI                       computed 0.8145   paper 0.8145
+  XX  CICIoT2023 B4 L9-mitigated specificity               computed 0.720   paper 0.721
+  ok  CICIoT2023 B4 L9-mitigated balanced acc.             computed 0.860   paper 0.860
+
+== multiseed: Five-seed mean-of-run MSR (seeds 42, 123, 2026, 7, 314) -- FAIL (6 cell(s))
+  ok  CICIoT2023 B2 mean                                   computed 0.9389   paper 0.9389
+  ok  CICIoT2023 B2 std                                    computed 0.0477   paper 0.0477
+  XX  CICIoT2023 B2 CI low                                 computed 0.8798   paper 0.8797
+  ok  CICIoT2023 B2 CI high                                computed 0.9981   paper 0.9981
+  ok  CICIoT2023 B3 mean                                   computed 0.9835   paper 0.9835
+  ok  CICIoT2023 B3 std                                    computed 0.0206   paper 0.0206
+  ok  CICIoT2023 B3 CI low                                 computed 0.9579   paper 0.9579
+  XX  CICIoT2023 B3 CI high                                computed 1.0090   paper 1.0091
+  ok  CICIoT2023 B4 mean                                   computed 0.9847   paper 0.9847
+  ok  CICIoT2023 B4 std                                    computed 0.0234   paper 0.0234
+  XX  CICIoT2023 B4 CI low                                 computed 0.9557   paper 0.9556
+  ok  CICIoT2023 B4 CI high                                computed 1.0138   paper 1.0138
+  ok  DIAD2024 B2 mean                                     computed 0.8904   paper 0.8904
+  ok  DIAD2024 B2 std                                      computed 0.1216   paper 0.1216
+  XX  DIAD2024 B2 CI low                                   computed 0.7395   paper 0.7394
+  ok  DIAD2024 B2 CI high                                  computed 1.0414   paper 1.0414
+  ok  DIAD2024 B3 mean                                     computed 0.9591   paper 0.9591
+  ok  DIAD2024 B3 std                                      computed 0.0408   paper 0.0408
+  XX  DIAD2024 B3 CI low                                   computed 0.9085   paper 0.9084
+  ok  DIAD2024 B3 CI high                                  computed 1.0098   paper 1.0098
+  ok  DIAD2024 B4 mean                                     computed 0.9604   paper 0.9604
+  ok  DIAD2024 B4 std                                      computed 0.0645   paper 0.0645
+  ok  DIAD2024 B4 CI low                                   computed 0.8803   paper 0.8803
+  XX  DIAD2024 B4 CI high                                  computed 1.0404   paper 1.0405
+
+== ablation_6cell: Per-component ablation cells -- FAIL (2 cell(s))
+  ok  (a) scalar reward CICIoT2023 B3 MSR                  computed 0.9982   paper 0.9982
+  ok  (a) scalar reward CICIoT2023 B4 MSR                  computed 0.9894   paper 0.9894
+  ok  (a) scalar reward CICIoT2023 B4 FPR                  computed 0.0000   paper 0.0000
+  ok  (a) scalar reward DIAD2024 B3 MSR                    computed 0.9996   paper 0.9996
+  ok  (a) scalar reward DIAD2024 B4 MSR                    computed 0.9987   paper 0.9987
+  ok  (a) scalar reward DIAD2024 B4 FPR                    computed 0.0000   paper 0.0000
+  ok  (b) MOSAR only CICIoT2023 B3 MSR                     computed 0.9909   paper 0.9909
+  ok  (b) MOSAR only CICIoT2023 B4 MSR                     computed 0.9994   paper 0.9994
+  ok  (b) MOSAR only CICIoT2023 B4 FPR                     computed 0.0000   paper 0.0000
+  ok  (b) MOSAR only DIAD2024 B3 MSR                       computed 0.9989   paper 0.9989
+  ok  (b) MOSAR only DIAD2024 B4 MSR                       computed 0.9978   paper 0.9978
+  ok  (b) MOSAR only DIAD2024 B4 FPR                       computed 0.0000   paper 0.0000
+  ok  (d) MOSAR + AFRAS-FL (mu=0) CICIoT2023 B3 MSR        computed 0.9909   paper 0.9909
+  ok  (d) MOSAR + AFRAS-FL (mu=0) CICIoT2023 B4 MSR        computed 0.9397   paper 0.9397
+  ok  (d) MOSAR + AFRAS-FL (mu=0) CICIoT2023 B4 FPR        computed 0.0045   paper 0.0045
+  ok  (d) MOSAR + AFRAS-FL (mu=0) DIAD2024 B3 MSR          computed 0.9989   paper 0.9989
+  ok  (d) MOSAR + AFRAS-FL (mu=0) DIAD2024 B4 MSR          computed 0.9959   paper 0.9959
+  ok  (d) MOSAR + AFRAS-FL (mu=0) DIAD2024 B4 FPR          computed 0.0480   paper 0.0480
+  ok  (e) complete R_total CICIoT2023 B3 MSR               computed 0.9978   paper 0.9978
+  ok  (e) complete R_total CICIoT2023 B4 MSR               computed 0.9990   paper 0.9990
+  ok  (e) complete R_total CICIoT2023 B4 FPR               computed 0.0026   paper 0.0026
+  ok  (e) complete R_total DIAD2024 B3 MSR                 computed 0.9028   paper 0.9028
+  ok  (e) complete R_total DIAD2024 B4 MSR                 computed 0.8474   paper 0.8474
+  ok  (e) complete R_total DIAD2024 B4 FPR                 computed 0.0421   paper 0.0421
+  XX  (f) MOSAR + PBRS CICIoT2023 B3 MSR                   computed 0.9334   paper 0.9978
+  ok  (f) MOSAR + PBRS CICIoT2023 B4 MSR                   computed 0.9930   paper 0.9930
+  XX  (f) MOSAR + PBRS CICIoT2023 B4 FPR                   computed 0.0640   paper 0.0000
+  ok  (f) MOSAR + PBRS DIAD2024 B3 MSR                     computed 0.9959   paper 0.9959
+  ok  (f) MOSAR + PBRS DIAD2024 B4 MSR                     computed 0.9956   paper 0.9956
+  ok  (f) MOSAR + PBRS DIAD2024 B4 FPR                     computed 0.0000   paper 0.0000
+
+37 cell(s) differ (12 table group(s) checked)

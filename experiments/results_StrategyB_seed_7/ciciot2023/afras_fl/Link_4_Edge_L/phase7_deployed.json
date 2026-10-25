@@ -1,0 +1,137 @@
+{
+  "link_name": "Link_4_Edge_L",
+  "feature_names": [
+    "syn_flag_count",
+    "protocol_type"
+  ],
+  "n_rules": 4,
+  "membership_params": {
+    "syn_flag_count": {
+      "Low": {
+        "center": -0.2114139109751091,
+        "width": 0.16579102974790574
+      },
+      "Medium": {
+        "center": 0.02069353067195895,
+        "width": 0.16579102974790574
+      },
+      "High": {
+        "center": 0.252800972319027,
+        "width": 0.16579102974790574
+      },
+      "range": [
+        -0.31088852882385254,
+        0.3522755801677704
+      ]
+    },
+    "protocol_type": {
+      "Low": {
+        "center": -0.22346739022935486,
+        "width": 0.16725945722717286
+      },
+      "Medium": {
+        "center": 0.010695849888687159,
+        "width": 0.16725945722717286
+      },
+      "High": {
+        "center": 0.24485909000672912,
+        "width": 0.16725945722717286
+      },
+      "range": [
+        -0.32382306456565857,
+        0.34521475434303284
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "syn_flag_count",
+          "High"
+        ],
+        [
+          "protocol_type",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.5497630331753555,
+      "support": 211,
+      "cell_id": 113,
+      "priority": 4.417279676743744,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "syn_flag_count",
+          "Medium"
+        ],
+        [
+          "protocol_type",
+          "Medium"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.5609756097560976,
+      "support": 1634,
+      "cell_id": 68,
+      "priority": 4.150881851624907,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "syn_flag_count",
+          "Low"
+        ],
+        [
+          "protocol_type",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.6065573770491803,
+      "support": 61,
+      "cell_id": 4,
+      "priority": 3.755015710983649,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "syn_flag_count",
+          "Medium"
+        ],
+        [
+          "protocol_type",
+          "Medium"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.484149855907781,
+      "support": 347,
+      "cell_id": 21,
+      "diversity_relaxed": true,
+      "priority": 2.266674389860776,
+      "rank": 4
+    }
+  ],
+  "summary": {
+    "total_rules": 4,
+    "block_rules": 2,
+    "limit_rules": 1,
+    "allow_rules": 1,
+    "avg_confidence": 0.5503614689721036,
+    "avg_support": 563.25
+  }
+}

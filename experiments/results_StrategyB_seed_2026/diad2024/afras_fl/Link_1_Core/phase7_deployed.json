@@ -1,0 +1,136 @@
+{
+  "link_name": "Link_1_Core",
+  "feature_names": [
+    "flow_packets_per_s",
+    "fwd_packets_per_s"
+  ],
+  "n_rules": 4,
+  "membership_params": {
+    "flow_packets_per_s": {
+      "Low": {
+        "center": 0.12606485039984128,
+        "width": 0.5387063051428223
+      },
+      "Medium": {
+        "center": 0.8802536775997925,
+        "width": 0.5387063051428223
+      },
+      "High": {
+        "center": 1.6344425047997435,
+        "width": 0.5387063051428223
+      },
+      "range": [
+        -0.19715893268585205,
+        1.957666277885437
+      ]
+    },
+    "fwd_packets_per_s": {
+      "Low": {
+        "center": 0.12745877207313916,
+        "width": 0.5420816789235496
+      },
+      "Medium": {
+        "center": 0.8863731225661087,
+        "width": 0.5420816789235496
+      },
+      "High": {
+        "center": 1.645287473059078,
+        "width": 0.5420816789235496
+      },
+      "range": [
+        -0.1977902352809906,
+        1.970536470413208
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Low"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.5546218487394958,
+      "support": 715,
+      "cell_id": 6,
+      "priority": 5.468859970832806,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Low"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.6206896551724138,
+      "support": 722,
+      "cell_id": 11,
+      "priority": 4.086253999960613,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "High"
+        ],
+        [
+          "fwd_packets_per_s",
+          "High"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.6946859903381642,
+      "support": 1035,
+      "cell_id": 62,
+      "priority": 3.8586319010683434,
+      "rank": 3
+    },
+    {
+      "rule_id": 3,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Low"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "ALLOW",
+      "consequent_action": 0,
+      "confidence": 0.6568265682656826,
+      "support": 1084,
+      "cell_id": 0,
+      "priority": 3.6726248777667063,
+      "rank": 4
+    }
+  ],
+  "summary": {
+    "total_rules": 4,
+    "block_rules": 1,
+    "limit_rules": 1,
+    "allow_rules": 2,
+    "avg_confidence": 0.6317060156289391,
+    "avg_support": 889.0
+  }
+}

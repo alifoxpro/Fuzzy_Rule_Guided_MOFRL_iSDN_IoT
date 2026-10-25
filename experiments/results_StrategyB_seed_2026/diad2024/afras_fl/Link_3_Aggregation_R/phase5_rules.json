@@ -1,0 +1,128 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 39928,
+    "cell_id": 0
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 33402,
+    "cell_id": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.8923713778829095,
+    "support": 95927,
+    "cell_id": 25
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Medium"
+      ],
+      [
+        "avg_pkt_size",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 2737,
+    "cell_id": 66
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Medium"
+      ],
+      [
+        "avg_pkt_size",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.9224555735056543,
+    "support": 4315,
+    "cell_id": 71
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Low"
+      ],
+      [
+        "avg_pkt_size",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 13979,
+    "cell_id": 104
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "pkt_len_max",
+        "Medium"
+      ],
+      [
+        "avg_pkt_size",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 1.0,
+    "support": 131,
+    "cell_id": 109
+  }
+]

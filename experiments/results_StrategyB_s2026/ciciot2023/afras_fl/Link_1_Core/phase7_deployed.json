@@ -1,0 +1,116 @@
+{
+  "link_name": "Link_1_Core",
+  "feature_names": [
+    "flow_iat_mean",
+    "flow_packets_per_s"
+  ],
+  "n_rules": 3,
+  "membership_params": {
+    "flow_iat_mean": {
+      "Low": {
+        "center": -18.960844777514588,
+        "width": 6.949544313069763
+      },
+      "Medium": {
+        "center": -9.231482739216919,
+        "width": 6.949544313069763
+      },
+      "High": {
+        "center": 0.49787929908075057,
+        "width": 6.949544313069763
+      },
+      "range": [
+        -23.130571365356445,
+        4.667605876922607
+      ]
+    },
+    "flow_packets_per_s": {
+      "Low": {
+        "center": 1.3692716911533966,
+        "width": 4.34095511090416
+      },
+      "Medium": {
+        "center": 7.44660884641922,
+        "width": 4.34095511090416
+      },
+      "High": {
+        "center": 13.523946001685044,
+        "width": 4.34095511090416
+      },
+      "range": [
+        -1.2353013753890991,
+        16.12851905822754
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "flow_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 298076,
+      "cell_id": 9,
+      "priority": 17.63082803774453,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "Low"
+        ],
+        [
+          "flow_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 500,
+      "cell_id": 1,
+      "priority": 9.324909151627297,
+      "rank": 2
+    },
+    {
+      "rule_id": 2,
+      "antecedents": [
+        [
+          "flow_iat_mean",
+          "High"
+        ],
+        [
+          "flow_packets_per_s",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 1.0,
+      "support": 175,
+      "cell_id": 75,
+      "priority": 7.7557259925572275,
+      "rank": 3
+    }
+  ],
+  "summary": {
+    "total_rules": 3,
+    "block_rules": 3,
+    "limit_rules": 0,
+    "allow_rules": 0,
+    "avg_confidence": 1.0,
+    "avg_support": 99583.66666666667
+  }
+}

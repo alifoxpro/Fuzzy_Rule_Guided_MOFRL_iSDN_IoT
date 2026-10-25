@@ -1,0 +1,91 @@
+================================================================================
+  FL-RLMAMS Phase 4 Strategy A: Multi-Agent DQN + FL + Master Agent
+  Dataset: DIAD2024
+================================================================================
+
+1. PHASE COMPARISON (Global Metrics)
+--------------------------------------------------------------------------------
+Phase                               MSR      FPR      FNR      JFI   Reward
+Phase A (Independent)            0.9758   0.1110   0.0230   0.9999   0.3827
+Phase B (FedAvg)                 0.8431   0.1175   0.0246   0.9731   0.3011
+Phase C (FedProx)                0.9361   0.2698   0.0114   0.9984   0.3573
+
+2. PER-LINK RESULTS (FedProx)
+--------------------------------------------------------------------------------
+Link                 MSR      FPR      FNR   Reward
+L1-Core           0.9641   0.3734   0.0019   0.3760
+L2-AggrL          0.8719   0.6045   0.0007   0.3141
+L3-AggrR          0.9824   0.0197   0.0262   0.3884
+L4-EdgeL          0.9271   0.0257   0.0250   0.3536
+L5-EdgeR          0.9350   0.3260   0.0034   0.3545
+
+3. MASTER AGENT: LOAD BALANCING RESULTS
+--------------------------------------------------------------------------------
+  Health Scores (Mean over 50 episodes):
+    L1-Core        : H = 0.6807 +/- 0.0094
+    L2-AggrL       : H = 0.6452 +/- 0.0048
+    L3-AggrR       : H = 0.7458 +/- 0.0022
+    L4-EdgeL       : H = 0.7919 +/- 0.0020
+    L5-EdgeR       : H = 0.7057 +/- 0.0055
+
+  JFI Before Master: 0.9832
+  JFI After Master:  0.9832
+  JFI Improvement:   +0.0000
+
+  Best Link Frequency:
+    L4-EdgeL       : 50 times
+
+  Routing Probabilities (Mean):
+    L1-Core        : 19.1%
+    L2-AggrL       : 18.1%
+    L3-AggrR       : 20.9%
+    L4-EdgeL       : 22.2%
+    L5-EdgeR       : 19.8%
+
+  Avg Reroutes per Episode: 0.0
+
+  Final Link Ranking:
+    #1 L4-EdgeL *** PRIMARY ***
+    #2 L3-AggrR (BACKUP)
+    #3 L5-EdgeR
+    #4 L1-Core
+    #5 L2-AggrL
+
+================================================================================
+
+% === LaTeX Table (for IEEE Paper) ===
+\begin{table}[htbp]
+\caption{Strategy A: Phase Comparison}
+\label{tab:strategy_a}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Phase & MSR & FPR & FNR & JFI \\
+\midrule
+Independent & 0.9758 & 0.1110 & 0.0230 & 0.9999 \\
+FedAvg & 0.8431 & 0.1175 & 0.0246 & 0.9731 \\
+FedProx & 0.9361 & 0.2698 & 0.0114 & 0.9984 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Master Agent: Link Health Scores and Routing}
+\label{tab:master_agent}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Link & Health Score & Routing Prob. & Rank \\
+\midrule
+L4-EdgeL & 0.7919 & 22.2% & 1 \\
+L3-AggrR & 0.7458 & 20.9% & 2 \\
+L5-EdgeR & 0.7057 & 19.8% & 3 \\
+L1-Core & 0.6807 & 19.1% & 4 \\
+L2-AggrL & 0.6452 & 18.1% & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+================================================================================
+  END OF REPORT
+================================================================================

@@ -1,0 +1,96 @@
+{
+  "link_name": "Link_5_Edge_R",
+  "feature_names": [
+    "flow_packets_per_s",
+    "fwd_packets_per_s"
+  ],
+  "n_rules": 2,
+  "membership_params": {
+    "flow_packets_per_s": {
+      "Low": {
+        "center": 0.24007184804474258,
+        "width": 0.6861596057977104
+      },
+      "Medium": {
+        "center": 1.2006952961615371,
+        "width": 0.6861596057977104
+      },
+      "High": {
+        "center": 2.1613187442783315,
+        "width": 0.6861596057977104
+      },
+      "range": [
+        -0.17162391543388367,
+        2.573014497756958
+      ]
+    },
+    "fwd_packets_per_s": {
+      "Low": {
+        "center": 0.24415022806321524,
+        "width": 0.6935683253075504
+      },
+      "Medium": {
+        "center": 1.2151458834937858,
+        "width": 0.6935683253075504
+      },
+      "High": {
+        "center": 2.1861415389243564,
+        "width": 0.6935683253075504
+      },
+      "range": [
+        -0.171990767121315,
+        2.6022825241088867
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": 0,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Low"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Low"
+        ]
+      ],
+      "consequent": "RATE_LIMIT",
+      "consequent_action": 1,
+      "confidence": 0.847457627118644,
+      "support": 120548,
+      "cell_id": 6,
+      "priority": 9.195520998284632,
+      "rank": 1
+    },
+    {
+      "rule_id": 1,
+      "antecedents": [
+        [
+          "flow_packets_per_s",
+          "Medium"
+        ],
+        [
+          "fwd_packets_per_s",
+          "Medium"
+        ]
+      ],
+      "consequent": "BLOCK",
+      "consequent_action": 2,
+      "confidence": 0.5544354838709677,
+      "support": 496,
+      "cell_id": 42,
+      "priority": 5.1633939229130235,
+      "rank": 2
+    }
+  ],
+  "summary": {
+    "total_rules": 2,
+    "block_rules": 1,
+    "limit_rules": 1,
+    "allow_rules": 0,
+    "avg_confidence": 0.7009465554948059,
+    "avg_support": 60522.0
+  }
+}

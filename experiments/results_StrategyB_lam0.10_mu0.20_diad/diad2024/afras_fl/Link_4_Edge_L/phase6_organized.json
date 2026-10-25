@@ -1,0 +1,222 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Medium"
+      ],
+      [
+        "flow_duration",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.8479381443298969,
+    "support": 9205,
+    "cell_id": 15,
+    "priority": 11.609473949691086,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Medium"
+      ],
+      [
+        "flow_duration",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.9568965517241379,
+    "support": 3728,
+    "cell_id": 19,
+    "priority": 7.869417131033182,
+    "rank": 2
+  },
+  {
+    "rule_id": 2,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "High"
+      ],
+      [
+        "flow_duration",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7667844522968198,
+    "support": 283,
+    "cell_id": 118,
+    "priority": 6.497318425870928,
+    "rank": 3
+  },
+  {
+    "rule_id": 3,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Medium"
+      ],
+      [
+        "flow_duration",
+        "Medium"
+      ]
+    ],
+    "consequent": "ALLOW",
+    "consequent_action": 0,
+    "confidence": 0.803594351732991,
+    "support": 15754,
+    "cell_id": 11,
+    "priority": 6.213335632270912,
+    "rank": 4
+  },
+  {
+    "rule_id": 4,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "flow_duration",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.9924812030075187,
+    "support": 278,
+    "cell_id": 3,
+    "priority": 5.588871843612182,
+    "rank": 5
+  },
+  {
+    "rule_id": 5,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Medium"
+      ],
+      [
+        "flow_duration",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.6753246753246753,
+    "support": 231,
+    "cell_id": 9,
+    "priority": 5.517474220648989,
+    "rank": 6
+  },
+  {
+    "rule_id": 6,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "flow_duration",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.5317460317460317,
+    "support": 126,
+    "cell_id": 4,
+    "priority": 3.8638158903895903,
+    "rank": 7
+  },
+  {
+    "rule_id": 7,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "flow_duration",
+        "Medium"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5259365994236311,
+    "support": 694,
+    "cell_id": 2,
+    "priority": 3.441682742984365,
+    "rank": 8
+  },
+  {
+    "rule_id": 8,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Medium"
+      ],
+      [
+        "flow_duration",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6204081632653061,
+    "support": 245,
+    "cell_id": 112,
+    "priority": 3.415552626374364,
+    "rank": 9
+  },
+  {
+    "rule_id": 9,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "Low"
+      ],
+      [
+        "flow_duration",
+        "Low"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.6369047619047619,
+    "support": 168,
+    "cell_id": 1,
+    "priority": 3.267256919623624,
+    "rank": 10
+  },
+  {
+    "rule_id": 10,
+    "antecedents": [
+      [
+        "pkt_len_min",
+        "High"
+      ],
+      [
+        "flow_duration",
+        "High"
+      ]
+    ],
+    "consequent": "RATE_LIMIT",
+    "consequent_action": 1,
+    "confidence": 0.5555555555555556,
+    "support": 63,
+    "cell_id": 117,
+    "priority": 2.3104906018664844,
+    "rank": 11
+  }
+]

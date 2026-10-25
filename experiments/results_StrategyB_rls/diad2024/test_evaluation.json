@@ -1,0 +1,213 @@
+{
+  "dataset": "diad2024",
+  "n_episodes": 50,
+  "phases": {
+    "B2_FedAvg": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.004076,
+          "msr_std": 0.0007320000000000001,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9987324479050267,
+          "fnr_std": 0.00039982952316282896,
+          "reward_mean": 0.2520062258033626,
+          "test_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.07703600000000001,
+          "msr_std": 0.003093655442999431,
+          "fpr_mean": 0.47,
+          "fpr_std": 0.49406477308142505,
+          "fnr_mean": 0.9229969055326872,
+          "fnr_std": 0.003101426974178761,
+          "reward_mean": 0.14494949769546206,
+          "test_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.00043599999999999997,
+          "msr_std": 0.00022870067774276488,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.999564,
+          "fnr_std": 0.0002287006777427823,
+          "reward_mean": 0.495393771259141,
+          "test_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.012428000000000002,
+          "msr_std": 0.000990361550142169,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9900074641252828,
+          "fnr_std": 0.0009376429692369387,
+          "reward_mean": 0.4595452292603101,
+          "test_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.0025840000000000004,
+          "msr_std": 0.0006582886904694627,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9975357119340634,
+          "fnr_std": 0.000660289180767486,
+          "reward_mean": 0.43125080159812185,
+          "test_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.019312000000000003,
+      "msr_std_of_links": 0.029146919864712982,
+      "fpr_mean_of_links": 0.094,
+      "fnr_mean_of_links": 0.9817673058994121,
+      "jfi": 0.30507523793829183
+    },
+    "B3_FedProx": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.232292,
+          "msr_std": 0.005251774557233012,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.7699340348497629,
+          "fnr_std": 0.005150463631679506,
+          "reward_mean": 0.40912346489529045,
+          "test_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.335092,
+          "msr_std": 0.005287602103033093,
+          "fpr_mean": 0.26,
+          "fpr_std": 0.4270831300812525,
+          "fnr_mean": 0.6649158196975931,
+          "fnr_std": 0.005279756363730605,
+          "reward_mean": 0.3235549615659041,
+          "test_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.0020999999999999994,
+          "msr_std": 0.00043680659335683104,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9979,
+          "fnr_std": 0.0004368065933568252,
+          "reward_mean": 0.4943950523132256,
+          "test_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.00814,
+          "msr_std": 0.000742159012611179,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9941824264125607,
+          "fnr_std": 0.0006216272865221402,
+          "reward_mean": 0.4621334772214136,
+          "test_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.002768,
+          "msr_std": 0.0005533317269052987,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9973676487108546,
+          "fnr_std": 0.0005504919009524837,
+          "reward_mean": 0.43120498089444764,
+          "test_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.1160784,
+      "msr_std_of_links": 0.14067947854552204,
+      "fpr_mean_of_links": 0.052000000000000005,
+      "fnr_mean_of_links": 0.8848599859341542,
+      "jfi": 0.40505730185939703
+    },
+    "B4_Fuzzy": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.335768,
+          "msr_std": 0.005614746298809947,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.666083642138596,
+          "fnr_std": 0.005606965345467512,
+          "reward_mean": 0.4975236697404234,
+          "test_windows": 20243
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.298328,
+          "msr_std": 0.005727793292359631,
+          "fpr_mean": 0.22,
+          "fpr_std": 0.38935844667863573,
+          "fnr_mean": 0.7016956836063489,
+          "fnr_std": 0.005740014557416411,
+          "reward_mean": 0.3024133368597664,
+          "test_windows": 15720
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.003004,
+          "msr_std": 0.0007260743763554805,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.996996,
+          "fnr_std": 0.0007260743763554893,
+          "reward_mean": 0.5245367444781561,
+          "test_windows": 20466
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.009899999999999999,
+          "msr_std": 0.0007180529228406498,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9926531221946062,
+          "fnr_std": 0.000612946798885484,
+          "reward_mean": 0.47026136181164147,
+          "test_windows": 7743
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.000956,
+          "msr_std": 0.00038218320214263734,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.9991758911699107,
+          "fnr_std": 0.00035700879932624725,
+          "reward_mean": 0.48079801344973655,
+          "test_windows": 14511
+        }
+      ],
+      "msr_mean_of_links": 0.1295912,
+      "msr_std_of_links": 0.15354367311797643,
+      "fpr_mean_of_links": 0.044,
+      "fnr_mean_of_links": 0.8713208678218922,
+      "jfi": 0.41600374118397987
+    }
+  }
+}
