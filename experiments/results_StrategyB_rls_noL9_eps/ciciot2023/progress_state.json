@@ -1,0 +1,55 @@
+{
+  "completed": [
+    "ciciot2023::phase_b1",
+    "ciciot2023::phase_b2",
+    "ciciot2023::phase_b3",
+    "ciciot2023::phase_b0",
+    "ciciot2023::phase_b4",
+    "ciciot2023::phase_b5"
+  ],
+  "results": {
+    "ciciot2023::phase_b1": {
+      "mean_msr": 0.9952399999999999,
+      "std_msr": 0.0039031269515607753,
+      "jain_fairness": 0.999984619762931,
+      "mean_fpr": 0.05110358438764636,
+      "mean_fnr": 0.00032699775189045575,
+      "mean_reward": 0.5722856289995817
+    },
+    "ciciot2023::phase_b2": {
+      "mean_msr": 0.92624,
+      "std_msr": 0.07612026274258386,
+      "jain_fairness": 0.9932914265387999,
+      "mean_fpr": 0.06652334152334152,
+      "mean_fnr": 0.007512899896800826,
+      "mean_reward": 0.5298800901141243
+    },
+    "ciciot2023::phase_b3": {
+      "mean_msr": 0.95536,
+      "std_msr": 0.052490517238830886,
+      "jain_fairness": 0.9969903323238445,
+      "mean_fpr": 0.15740849673202612,
+      "mean_fnr": 0.0,
+      "mean_reward": 0.5474757912020383
+    },
+    "ciciot2023::phase_b4": {
+      "mean_msr": 0.966,
+      "std_msr": 0.03630559185580097,
+      "jain_fairness": 0.9985894782898296,
+      "mean_fpr": 0.21005421289963017,
+      "mean_fnr": 0.0,
+      "mean_reward": 0.5642721189458121
+    },
+    "ciciot2023::phase_b5": {
+      "health_mean": [
+        0.8417513941165062,
+        0.8394458488480084,
+        0.8410291581346344,
+        0.7812464417928474,
+        0.728279052291562
+      ],
+      "jfi_before": 0.9877999422967412,
+      "jfi_after": 0.9877999422967412
+    }
+  }
+}

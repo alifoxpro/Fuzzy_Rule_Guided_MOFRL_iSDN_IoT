@@ -1,0 +1,42 @@
+[
+  {
+    "rule_id": 0,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Low"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Low"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.7403846153846154,
+    "support": 416,
+    "cell_id": 0,
+    "priority": 6.700206332863093,
+    "rank": 1
+  },
+  {
+    "rule_id": 1,
+    "antecedents": [
+      [
+        "flow_packets_per_s",
+        "Medium"
+      ],
+      [
+        "fwd_packets_per_s",
+        "Medium"
+      ]
+    ],
+    "consequent": "BLOCK",
+    "consequent_action": 2,
+    "confidence": 0.8051282051282052,
+    "support": 195,
+    "cell_id": 11,
+    "priority": 6.374338473070701,
+    "rank": 2
+  }
+]

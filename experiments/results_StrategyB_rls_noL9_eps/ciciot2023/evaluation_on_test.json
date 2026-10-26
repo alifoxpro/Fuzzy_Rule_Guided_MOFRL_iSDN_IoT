@@ -1,0 +1,75 @@
+{
+  "dataset": "ciciot2023",
+  "n_episodes": 50,
+  "phases": {
+    "B4_Fuzzy": {
+      "per_link": [
+        {
+          "link_name": "Link_1_Core",
+          "n_episodes": 50,
+          "msr_mean": 0.058348,
+          "msr_std": 0.0035365090131371066,
+          "fpr_mean": 0.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": -0.017334619673049154,
+          "eval_windows": 47358
+        },
+        {
+          "link_name": "Link_2_Aggregation_L",
+          "n_episodes": 50,
+          "msr_mean": 0.896104,
+          "msr_std": 0.004004445529658256,
+          "fpr_mean": 0.9444147880211081,
+          "fpr_std": 0.030665993183231943,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.5614988664773783,
+          "eval_windows": 37513
+        },
+        {
+          "link_name": "Link_3_Aggregation_R",
+          "n_episodes": 50,
+          "msr_mean": 0.30559200000000003,
+          "msr_std": 0.005617538250871105,
+          "fpr_mean": 0.5130752215259551,
+          "fpr_std": 0.10165409960111847,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.08762556254282958,
+          "eval_windows": 31892
+        },
+        {
+          "link_name": "Link_4_Edge_L",
+          "n_episodes": 50,
+          "msr_mean": 0.6520959999999999,
+          "msr_std": 0.004981443967365289,
+          "fpr_mean": 0.9867175659084136,
+          "fpr_std": 0.0022767538337697957,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.35573558453008064,
+          "eval_windows": 13298
+        },
+        {
+          "link_name": "Link_5_Edge_R",
+          "n_episodes": 50,
+          "msr_mean": 0.966516,
+          "msr_std": 0.0021173908472457248,
+          "fpr_mean": 1.0,
+          "fpr_std": 0.0,
+          "fnr_mean": 0.0,
+          "fnr_std": 0.0,
+          "reward_mean": 0.6079739693765879,
+          "eval_windows": 28067
+        }
+      ],
+      "msr_mean_of_links": 0.5757312,
+      "msr_std_of_links": 0.3469419653454451,
+      "fpr_mean_of_links": 0.6888415150910954,
+      "fnr_mean_of_links": 0.0,
+      "jfi": 0.733600341946263
+    }
+  }
+}

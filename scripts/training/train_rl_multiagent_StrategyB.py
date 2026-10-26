@@ -171,6 +171,9 @@ PBRS_ATTACK_CLASS = int(os.environ.get('PBRS_ATTACK_CLASS', 0))  # 0=High-sev
 AFRAS_N_FUZZY_SETS = 3          # Low, Medium, High membership functions
 AFRAS_MIN_RULE_CONFIDENCE = 0.5
 AFRAS_MIN_RULE_SUPPORT = 50
+# L9 mitigation (consequent-class diversity). Set AFRAS_L9_DIVERSITY=0 to mine
+# the rule base without it, as in the original record-level CICIoT2023 B4 run.
+AFRAS_L9_DIVERSITY = int(os.environ.get('AFRAS_L9_DIVERSITY', 1)) == 1
 AFRAS_GRID_COARSE = 5           # Coarse grid divisions
 AFRAS_GRID_FINE = 10            # Fine grid divisions
 AFRAS_DENSITY_THRESHOLD = 0.3   # Below = sparse → coarse grid
@@ -873,7 +876,7 @@ class AFRASFLPipeline:
         want = {'BLOCK', 'RATE_LIMIT', 'ALLOW'}
         severity_to_action_name = {0: 'BLOCK', 1: 'RATE_LIMIT', 2: 'ALLOW'}
         severity_to_action_idx = {0: 2, 1: 1, 2: 0}
-        for missing in sorted(want - present):
+        for missing in (sorted(want - present) if AFRAS_L9_DIVERSITY else []):
             candidates = [c for c in grid_cells
                           if severity_to_action_name[c['majority_class']] == missing]
             if not candidates:
@@ -2200,6 +2203,14 @@ def train_fuzzy_augmented(agents, envs, fl_rounds, local_episodes, mu=FEDPROX_MU
 # ============================================================================
 # Main Training Pipeline
 # ============================================================================
+def _replay_epsilon_decay(agents, n_decays):
+    """A phase loaded from cache leaves epsilon where a fresh agent starts;
+    apply the decays that training the phase would have applied."""
+    for a in agents:
+        for _ in range(n_decays):
+            a.decay_epsilon()
+
+
 def train_dataset(dataset_key):
     global _log_file
     ds_label = DS_LABELS[dataset_key]
@@ -2433,6 +2444,7 @@ def train_dataset(dataset_key):
         save_progress(progress, progress_file)
     else:
         log(f'  Phase B1: COMPLETED (loading)')
+        _replay_epsilon_decay(agents, INDEPENDENT_EPISODES)
         res_file = phase_b1_dir / 'results.json'
         if res_file.exists():
             with open(res_file) as f:
@@ -2464,6 +2476,7 @@ def train_dataset(dataset_key):
         save_progress(progress, progress_file)
     else:
         log(f'  Phase B2: COMPLETED (loading)')
+        _replay_epsilon_decay(agents, FL_ROUNDS)
         res_file = phase_b2_dir / 'results.json'
         if res_file.exists():
             with open(res_file) as f:
@@ -2494,6 +2507,7 @@ def train_dataset(dataset_key):
         save_progress(progress, progress_file)
     else:
         log(f'  Phase B3: COMPLETED (loading)')
+        _replay_epsilon_decay(agents, FL_ROUNDS)
         res_file = phase_b3_dir / 'results.json'
         if res_file.exists():
             with open(res_file) as f:
