@@ -483,4 +483,40 @@
   ok  (f) MOSAR + PBRS DIAD2024 B4 MSR                     computed 0.9956   paper 0.9956
   ok  (f) MOSAR + PBRS DIAD2024 B4 FPR                     computed 0.0000   paper 0.0000
 
-ALL TABLES MATCH (12 table group(s) checked)
+== text: Derived numbers quoted in the running text -- PASS
+  ok  CIC B3->B4 MSR gain (pp)                             computed 0.13   paper 0.13
+  ok  DIAD B3->B4 MSR drop (pp)                            computed 5.5   paper 5.5
+  ok  DIAD PBRS minus canonical B4 MSR (pp)                computed 14.8   paper 14.8
+  ok  CIC B1 FPR (x1e-4)                                   computed 4.5   paper 4.5
+  ok  CIC B4 FPR (x1e-3)                                   computed 2.6   paper 2.6
+  ok  DIAD MCC gap B3-B4                                   computed 0.34   paper 0.34
+  ok  CIC lambda MSR span (pp)                             computed 1.26   paper 1.26
+  ok  CIC FedProx FPR ratio A/B                            computed 20.6   paper 20.6
+  ok  DIAD FedProx FPR ratio A/B                           computed 150.2   paper 150.2
+  ok  DIAD Strategy A FedAvg FPR                           computed 0.1175   paper 0.1175
+  ok  CIC->DIAD B2 MSR drop (pp)                           computed 5.0   paper 5.0
+  ok  CIC->DIAD B3 MSR drop (pp)                           computed 9.5   paper 9.5
+  ok  CIC->DIAD B4 MSR drop (pp)                           computed 15.2   paper 15.2
+  ok  DIAD JFI B2-B4 (pp)                                  computed 2.7   paper 2.7
+  ok  Strategy B wins over A (of 24)                       computed 21   paper 21
+  ok  CICIoT2023 run-level Welch t B4 vs B3                computed 0.093   paper 0.093
+  ok  CICIoT2023 run-level Welch p B4 vs B3                computed 0.928   paper 0.928
+  ok  CICIoT2023 Wilcoxon W B4 vs B3                       computed 6   paper 6
+  ok  CICIoT2023 Wilcoxon p B4 vs B3                       computed 0.812   paper 0.812
+  ok  CICIoT2023 run-level Welch t B4 vs B2                computed 1.930   paper 1.930
+  ok  CICIoT2023 run-level Welch p B4 vs B2                computed 0.103   paper 0.103
+  ok  DIAD2024 run-level Welch t B4 vs B3                  computed 0.037   paper 0.037
+  ok  DIAD2024 run-level Welch p B4 vs B3                  computed 0.972   paper 0.972
+  ok  DIAD2024 Wilcoxon W B4 vs B3                         computed 5   paper 5
+  ok  DIAD2024 Wilcoxon p B4 vs B3                         computed 0.625   paper 0.625
+  ok  DIAD2024 run-level Welch t B4 vs B2                  computed 1.136   paper 1.136
+  ok  DIAD2024 run-level Welch p B4 vs B2                  computed 0.299   paper 0.299
+  ok  DIAD B4 run-level sigma (pp)                         computed 6.4   paper 6.4
+  ok  DIAD PBRS Macro-F1                                   computed 0.878   paper 0.878
+  ok  DIAD PBRS MCC                                        computed 0.780   paper 0.780
+  ok  DIAD record-level BA min                             computed 0.967   paper 0.967
+  ok  DIAD record-level BA max                             computed 0.977   paper 0.977
+  ok  min record-level MSR, federated phases               computed 0.57   paper 0.57
+  ok  DIAD B3 test-over-train MSR gap (pp)                 computed 0.75   paper 0.75
+
+ALL TABLES MATCH (13 table group(s) checked)

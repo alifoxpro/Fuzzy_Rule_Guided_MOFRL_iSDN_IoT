@@ -18,7 +18,8 @@ The script rebuilds each table from `experiments/` and compares every cell with
 the value printed in the manuscript, at the manuscript's precision. Its output for
 this release is saved in
 [`scripts/reproduce/verification_report.txt`](scripts/reproduce/verification_report.txt):
-**all 460 cells of the 12 table groups reproduce** (`ALL TABLES MATCH`). Section 3
+**all 494 values reproduce** (`ALL TABLES MATCH`): 460 cells of the 12 results tables
+and 34 derived numbers quoted in the text (group `text`). Section 3
 lists the result files that were completed or re-evaluated for this release.
 
 ## 2. Where each table comes from
@@ -36,6 +37,7 @@ lists the result files that were completed or re-evaluated for this release.
 | Strategy A vs B (`tab:strategy_ab`) | `results_StrategyA/{dataset}/results.json`, `results_StrategyB/{dataset}/results.json` | `scripts/training/train_rl_multiagent_StrategyA.py` |
 | Record-level test split (`tab:rls_test`, `tab:rls_balanced`, `tab:rls_l9_mitigation`) | `results_StrategyB_rls/{dataset}/evaluation_on_test.json`; CICIoT2023 B2/B3 from `evaluation_on_test_reevaluated.json`; CICIoT2023 pre-mitigation B4 from `results_StrategyB_rls_noL9_eps/ciciot2023/evaluation_on_test.json` | `scripts/training/evaluate_on_test_legacy.py` (50-episode evaluator used for these tables) |
 | Five-seed replication (`tab:multiseed`) | `results_StrategyB` (42), `_s123`, `_s2026` (CICIoT2023) / `_seed_2026` (DIAD2024), `_seed_7`, `_seed_314` | training script with `--seed` |
+| λ-sensitivity figure (`fig:lambda_sensitivity`) | CICIoT2023: the four λ-table runs; DIAD2024: the μ = 0.10 runs of the (λ, μ) sweep | `scripts/charts/plot_lambda_sensitivity.py` |
 | Ablation cells (`tab:ablation_6cell`) | `results_StrategyB_cell_a_scalar`, `_cell_b_mosar_only`, `_cell_d_mosar_afras`, `results_StrategyB`, `_pbrs` | `scripts/ablations/run_major_revision_queue.py`, `run_tier3_queue.py` |
 
 Model checkpoints (`*.pt`), Mamba embedding caches (`*.npy`) and the datasets are

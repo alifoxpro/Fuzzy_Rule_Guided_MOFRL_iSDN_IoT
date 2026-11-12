@@ -384,9 +384,65 @@ def t_rls():
     T.check("CICIoT2023 B4 L9-mitigated balanced acc.", 1 - (p["fpr_mean_of_links"] + p["fnr_mean_of_links"]) / 2, 0.860, 3)
     return T
 
+
+def t_text():
+    T = Table("text", "Derived numbers quoted in the running text")
+    S = "results_StrategyB"
+    c = {k: phase(S, "ciciot2023", k) for k in ("b1", "b2", "b3", "b4")}
+    d = {k: phase(S, "diad2024", k) for k in ("b1", "b2", "b3", "b4")}
+    A = {ds: load("results_StrategyA", ds, "results.json") for ds in DS}
+    T.check("CIC B3->B4 MSR gain (pp)", 100 * (c["b4"]["mean_msr"] - c["b3"]["mean_msr"]), 0.13, 2)
+    T.check("DIAD B3->B4 MSR drop (pp)", 100 * (d["b3"]["mean_msr"] - d["b4"]["mean_msr"]), 5.5, 1)
+    T.check("DIAD PBRS minus canonical B4 MSR (pp)", 100 * (phase("results_StrategyB_pbrs", "diad2024", "b4")["mean_msr"] - d["b4"]["mean_msr"]), 14.8, 1)
+    T.check("CIC B1 FPR (x1e-4)", 1e4 * c["b1"]["mean_fpr"], 4.5, 1)
+    T.check("CIC B4 FPR (x1e-3)", 1e3 * c["b4"]["mean_fpr"], 2.6, 1)
+    mcc = {s: binary_from_severity(S, "diad2024", s)["mcc"] for s in ("mosar_fedprox", "fuzzy_retrain")}
+    T.check("DIAD MCC gap B3-B4", mcc["mosar_fedprox"] - mcc["fuzzy_retrain"], 0.34, 2)
+    lam = [phase(r, "ciciot2023", "b4")["mean_msr"] for r in ("results_StrategyB_lam0.00", "results_StrategyB_lam0.10",
+                                                              "results_StrategyB_mini_lam0.25", "results_StrategyB_lam0.50")]
+    T.check("CIC lambda MSR span (pp)", 100 * (max(lam) - min(lam)), 1.26, 2)
+    T.check("CIC FedProx FPR ratio A/B", A["ciciot2023"]["phase_c"]["mean_fpr"] / c["b3"]["mean_fpr"], 20.6, 1)
+    T.check("DIAD FedProx FPR ratio A/B", A["diad2024"]["phase_c"]["mean_fpr"] / d["b3"]["mean_fpr"], 150.2, 1)
+    T.check("DIAD Strategy A FedAvg FPR", A["diad2024"]["phase_b"]["mean_fpr"], 0.1175, 4)
+    for k, v in (("b2", 5.0), ("b3", 9.5), ("b4", 15.2)):
+        T.check(f"CIC->DIAD {k.upper()} MSR drop (pp)", 100 * (c[k]["mean_msr"] - d[k]["mean_msr"]), v, 1)
+    T.check("DIAD JFI B2-B4 (pp)", 100 * (d["b2"]["jain_fairness"] - d["b4"]["jain_fairness"]), 2.7, 1)
+    wins = 0
+    for ds in DS:
+        for pa, pb in (("a", "b1"), ("b", "b2"), ("c", "b3")):
+            a, b = A[ds][f"phase_{pa}"], phase(S, ds, pb)
+            wins += (b["mean_msr"] > a["mean_msr"]) + (b["jain_fairness"] > a["jain_fairness"]) \
+                + (b["mean_fpr"] < a["mean_fpr"]) + (b["mean_reward"] > a["mean_reward"])
+    T.check("Strategy B wins over A (of 24)", wins, 21, 0)
+    runs = {"ciciot2023": ["results_StrategyB", "results_StrategyB_s123", "results_StrategyB_s2026", "results_StrategyB_seed_7", "results_StrategyB_seed_314"],
+            "diad2024": ["results_StrategyB", "results_StrategyB_s123", "results_StrategyB_seed_2026", "results_StrategyB_seed_7", "results_StrategyB_seed_314"]}
+    x = {ds: {k: np.array([phase(r, ds, k)["mean_msr"] for r in rr]) for k in ("b2", "b3", "b4")} for ds, rr in runs.items()}
+    for ds, (t3, p3, w, pw, t2, p2) in {"ciciot2023": (0.093, 0.928, 6, 0.812, 1.930, 0.103),
+                                       "diad2024": (0.037, 0.972, 5, 0.625, 1.136, 0.299)}.items():
+        r = stats.ttest_ind(x[ds]["b4"], x[ds]["b3"], equal_var=False)
+        T.check(f"{DS[ds]} run-level Welch t B4 vs B3", r.statistic, t3, 3); T.check(f"{DS[ds]} run-level Welch p B4 vs B3", r.pvalue, p3, 3)
+        r = stats.wilcoxon(x[ds]["b4"], x[ds]["b3"])
+        T.check(f"{DS[ds]} Wilcoxon W B4 vs B3", r.statistic, w, 0); T.check(f"{DS[ds]} Wilcoxon p B4 vs B3", r.pvalue, pw, 3)
+        r = stats.ttest_ind(x[ds]["b4"], x[ds]["b2"], equal_var=False)
+        T.check(f"{DS[ds]} run-level Welch t B4 vs B2", r.statistic, t2, 3); T.check(f"{DS[ds]} run-level Welch p B4 vs B2", r.pvalue, p2, 3)
+    T.check("DIAD B4 run-level sigma (pp)", 100 * x["diad2024"]["b4"].std(ddof=1), 6.4, 1)
+    pb = binary_from_severity("results_StrategyB_pbrs", "diad2024", "fuzzy_retrain")
+    T.check("DIAD PBRS Macro-F1", pb["macro_f1"], 0.878, 3); T.check("DIAD PBRS MCC", pb["mcc"], 0.780, 3)
+    dd = load("results_StrategyB_rls", "diad2024", "evaluation_on_test.json")["phases"]
+    ba = [1 - (q["fpr_mean_of_links"] + q["fnr_mean_of_links"]) / 2 for q in dd.values()]
+    T.check("DIAD record-level BA min", min(ba), 0.967, 3); T.check("DIAD record-level BA max", max(ba), 0.977, 3)
+    cic = load("results_StrategyB_rls", "ciciot2023", "evaluation_on_test_reevaluated.json")["phases"]
+    o = load("results_StrategyB_rls_noL9_eps", "ciciot2023", "evaluation_on_test.json")["phases"]["B4_Fuzzy"]
+    allm = [q["msr_mean_of_links"] for q in list(dd.values()) + list(cic.values())] + [o["msr_mean_of_links"]]
+    T.check("min record-level MSR, federated phases", math.floor(100 * min(allm)) / 100, 0.57, 2)
+    T.check("DIAD B3 test-over-train MSR gap (pp)", 100 * (dd["B3_FedProx"]["msr_mean_of_links"] - d["b3"]["mean_msr"]), 0.75, 2)
+    return T
+
+
 TABLES = {"phase_msr": t_phase_msr, "balanced_metrics": t_balanced, "phase_b0": t_phase_b0, "stats": t_stats,
           "lambda_ablation": t_lambda, "lambda_mu_sweep": t_lambda_mu, "topsis_cc": t_topsis, "rules": t_rules,
-          "strategy_ab": t_strategy_ab, "rls": t_rls, "multiseed": t_multiseed, "ablation_6cell": t_ablation}
+          "strategy_ab": t_strategy_ab, "rls": t_rls, "multiseed": t_multiseed, "ablation_6cell": t_ablation,
+          "text": t_text}
 
 
 def main():
